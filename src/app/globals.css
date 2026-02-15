@@ -40,7 +40,9 @@ body {
   }
 
   .container {
-    padding: 0 1rem;
+    padding: 0 1.5rem !important;
+    /* Force padding on mobile */
+    width: 100%;
   }
 }
 
