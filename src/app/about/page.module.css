@@ -1,0 +1,95 @@
+.title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+}
+
+.intro {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.subtitle {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.missionVision {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.mvCard {
+    background: var(--neutral-light);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.leadershipList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.leadershipList li {
+    background: white;
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.highlightBox {
+    background: var(--neutral-dark);
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    position: sticky;
+    top: 100px;
+}
+
+.highlightBox h3 {
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 0.5rem;
+}
+
+.highlightBox ul {
+    list-style: none;
+    padding: 0;
+}
+
+.highlightBox li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.highlightBox li::before {
+    content: "✓";
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

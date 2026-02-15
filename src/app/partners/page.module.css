@@ -1,0 +1,100 @@
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.intro {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 4rem;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.leadershipSection {
+    margin-bottom: 5rem;
+}
+
+.leadershipSection h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.partnersGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.partnerCard {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #eee;
+    transition: box-shadow 0.3s;
+}
+
+.partnerCard:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.avatarPlaceholder {
+    width: 80px;
+    height: 80px;
+    background: var(--secondary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0 auto 1.5rem;
+}
+
+.role {
+    color: #777;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.brandSection {
+    text-align: center;
+    background: var(--neutral-light);
+    padding: 4rem 2rem;
+    border-radius: 8px;
+}
+
+.brandSection h2 {
+    margin-bottom: 1rem;
+}
+
+.brandSection p {
+    margin-bottom: 3rem;
+    color: #555;
+}
+
+.logoGrid {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.logoBox {
+    background: white;
+    padding: 2rem 3rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logoBox h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}

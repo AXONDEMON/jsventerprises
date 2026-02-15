@@ -1,0 +1,70 @@
+.hero {
+    height: 80vh;
+    background-image: url('/images/hero_factory_main.png');
+    /* Placeholder industrial image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(13, 27, 42, 0.7);
+    /* Deep blue overlay */
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.title {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--neutral-light);
+}
+
+.ctaGroup {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.outlineBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.outlineBtn:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+}

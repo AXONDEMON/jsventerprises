@@ -1,141 +1,281 @@
-.page {
-  --background: #fafafa;
-  --foreground: #fff;
-
-  --text-primary: #000;
-  --text-secondary: #666;
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-  --button-secondary-border: #ebebeb;
-
-  display: flex;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-geist-sans);
-  background-color: var(--background);
+.introContent {
+    flex: 1;
 }
 
-.main {
-  display: flex;
-  min-height: 100vh;
-  width: 100%;
-  max-width: 800px;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  background-color: var(--foreground);
-  padding: 120px 60px;
+.introLayout {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
 }
 
-.intro {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  gap: 24px;
+@media (max-width: 900px) {
+    .introLayout {
+        flex-direction: column;
+        gap: 2rem;
+    }
 }
 
-.intro h1 {
-  max-width: 320px;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 48px;
-  letter-spacing: -2.4px;
-  text-wrap: balance;
-  color: var(--text-primary);
+.introImage {
+    flex: 1;
+    display: none;
 }
 
-.intro p {
-  max-width: 440px;
-  font-size: 18px;
-  line-height: 32px;
-  text-wrap: balance;
-  color: var(--text-secondary);
+@media (min-width: 900px) {
+    .introImage {
+        display: block;
+    }
 }
 
-.intro a {
-  font-weight: 500;
-  color: var(--text-primary);
+.lead {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 3rem;
+    line-height: 1.6;
 }
 
-.ctas {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 440px;
-  gap: 16px;
-  font-size: 14px;
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
 }
 
-.ctas a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  padding: 0 16px;
-  border-radius: 128px;
-  border: 1px solid transparent;
-  transition: 0.2s;
-  cursor: pointer;
-  width: fit-content;
-  font-weight: 500;
+.statCard {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--accent-color);
+    text-align: center;
 }
 
-a.primary {
-  background: var(--text-primary);
-  color: var(--background);
-  gap: 8px;
+
+.statCard h3 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
 }
 
-a.secondary {
-  border-color: var(--button-secondary-border);
+.partnersSection {
+    background-color: var(--neutral-light);
+    padding: 2rem 0;
+    text-align: center;
 }
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
+.logoGrid {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
-@media (max-width: 600px) {
-  .main {
-    padding: 48px 24px;
-  }
-
-  .intro {
-    gap: 16px;
-  }
-
-  .intro h1 {
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: -1.92px;
-  }
+.partnerCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 120px;
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
+.partnerCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
 
-  .page {
-    --background: #000;
-    --foreground: #000;
+.partnerLogo:hover {
+    transform: scale(1.05);
+}
 
-    --text-primary: #ededed;
-    --text-secondary: #999;
+.productsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
 
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-    --button-secondary-border: #1a1a1a;
-  }
+.productCard {
+    background: white;
+    border: 1px solid #eee;
+    padding: 2rem;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    overflow: hidden;
+}
+
+.cardImage {
+    position: relative;
+    height: 200px;
+    margin: -2rem -2rem 1.5rem -2rem;
+}
+
+.productCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.gallerySection {
+    background: #f9f9f9;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.gallerySection h2 {
+    margin-bottom: 3rem;
+}
+
+.galleryGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.galleryItem {
+    position: relative;
+    height: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.galleryItem:hover {
+    transform: scale(1.03);
+}
+
+.textLink {
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.ctaSection {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.ctaSection h2 {
+    color: white;
+}
+
+.ctaSection p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Production Process Styles */
+.processSection {
+    background-image: url('/images/process_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    padding: 5rem 0;
+    color: white;
+}
+
+.processSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(13, 27, 42, 0.85);
+    z-index: 0;
+}
+
+.processSection :global(.container) {
+    position: relative;
+    z-index: 1;
+}
+
+.sectionTitleWhite {
+    color: white;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.processGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+
+.processCard {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s;
+}
+
+.processCard:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.processImageContainer {
+    width: 100%;
+    height: 180px;
+    position: relative;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.processCard h3 {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.processCard p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.parallaxSection {
+    background-image: url('/images/infrastructure_bg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6rem 0;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin: 4rem 0;
+}
+
+.parallaxOverlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 3rem;
+    display: inline-block;
+    border-radius: 8px;
+    max-width: 800px;
+}
+
+.parallaxSection h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.parallaxSection p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #eee;
 }

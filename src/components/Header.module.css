@@ -1,0 +1,179 @@
+.header {
+    background-color: var(--primary-color);
+    /* Dark Blue */
+    color: white;
+    padding: 0.5rem 0;
+    /* Reduced vertical padding */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: white;
+    /* Optional: if logos need white backing */
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+.mainLogo {
+    display: flex;
+    align-items: center;
+}
+
+.divider {
+    width: 1px;
+    height: 40px;
+    background-color: #ddd;
+}
+
+.partnerHeaderLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.partnerLabel {
+    font-size: 0.7rem;
+    color: #555;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.nav {
+    display: flex;
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navItem a {
+    text-decoration: none;
+    color: var(--neutral-light);
+    font-family: var(--font-opensans), sans-serif;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navItem a:hover {
+    color: var(--accent-color);
+}
+
+.cta .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+}
+
+.mobileCta {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav {
+        display: none;
+        /* Default hidden */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--primary-color);
+        padding: 2rem;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .navActive {
+        display: flex;
+        animation: slideDown 0.3s ease-in-out forwards;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .navList {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .logo {
+        max-width: 140px;
+    }
+
+    /* Animate Hamburger */
+    .barOne {
+        transform: rotate(45deg);
+    }
+
+    .barTwo {
+        opacity: 0;
+    }
+
+    .barThree {
+        transform: rotate(-45deg);
+    }
+
+    .cta {
+        display: none;
+        /* Hide desktop CTA */
+    }
+
+    .mobileCta {
+        display: block;
+        margin-top: 1rem;
+    }
+}
