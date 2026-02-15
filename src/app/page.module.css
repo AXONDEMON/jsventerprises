@@ -14,6 +14,20 @@
         flex-direction: column;
         gap: 2rem;
     }
+
+    .statsGrid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 cols on mobile instead of 1 if possible */
+        gap: 1rem;
+    }
+
+    .statCard {
+        padding: 1rem;
+    }
+
+    .statCard h3 {
+        font-size: 1.5rem;
+    }
 }
 
 .introImage {
@@ -258,6 +272,36 @@
     color: white;
     position: relative;
     margin: 4rem 0;
+}
+
+@media (max-width: 768px) {
+    .parallaxSection {
+        padding: 3rem 1rem;
+        background-attachment: scroll;
+        /* Fix for mobile parallax jitters */
+    }
+
+    .parallaxOverlay {
+        padding: 1.5rem;
+        width: 100%;
+    }
+
+    .parallaxSection h2 {
+        font-size: 1.8rem;
+    }
+
+    .processSection {
+        padding: 3rem 0;
+    }
+
+    .sectionTitleWhite {
+        font-size: 2rem;
+    }
+
+    .gallerySection,
+    .ctaSection {
+        padding: 3rem 0;
+    }
 }
 
 .parallaxOverlay {

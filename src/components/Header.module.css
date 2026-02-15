@@ -109,6 +109,14 @@
 }
 
 @media (max-width: 900px) {
+    .header {
+        padding: 0.25rem 0;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
     .hamburger {
         display: flex;
     }
@@ -151,7 +159,8 @@
     }
 
     .logo {
-        max-width: 140px;
+        max-width: 120px;
+        /* Smaller logo on mobile */
     }
 
     /* Animate Hamburger */

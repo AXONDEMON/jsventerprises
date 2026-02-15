@@ -38,6 +38,10 @@ body {
   html {
     font-size: 14px;
   }
+
+  .container {
+    padding: 0 1rem;
+  }
 }
 
 h1,
