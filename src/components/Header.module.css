@@ -158,9 +158,41 @@
         text-align: center;
     }
 
+    .logoContainer {
+        padding: 0.25rem 0.5rem;
+        gap: 0.5rem;
+        max-width: 75%;
+        /* Ensure space for hamburger */
+    }
+
+    .mainLogo img {
+        width: 100px;
+        height: auto;
+    }
+
+    .partnerHeaderLogo img {
+        width: 80px;
+        /* Smaller partner logo */
+        height: auto;
+    }
+
+    .partnerLabel {
+        font-size: 0.5rem;
+        display: none;
+        /* Hide label on really small screens if needed, or keep small */
+    }
+
     .logo {
-        max-width: 120px;
-        /* Smaller logo on mobile */
+        max-width: 100px;
+    }
+
+    .hamburger {
+        display: flex;
+        z-index: 2000;
+        /* Ensure strictly on top */
+        position: relative;
+        margin-left: auto;
+        /* Push to right */
     }
 
     /* Animate Hamburger */
