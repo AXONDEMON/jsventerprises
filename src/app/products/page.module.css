@@ -121,10 +121,23 @@
 @media (max-width: 768px) {
     .productSection {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 3rem;
+        margin-bottom: 3rem;
     }
 
     .productSection:nth-of-type(even) .productInfo {
         order: 0;
+    }
+
+    .specsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .ctaBox {
+        padding: 2rem 1.5rem;
     }
 }

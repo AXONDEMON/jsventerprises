@@ -38,6 +38,31 @@ export default function Facility() {
                 </div>
             </section>
 
+            {/* New Furnace Section */}
+            <section className={styles.featureSection} style={{ flexDirection: 'row-reverse' }}>
+                <div className={styles.featureText}>
+                    <h2>Induction Furnace Facility</h2>
+                    <p>
+                        Powering our production are <strong>3 x 12 Tonnes Induction Furnaces</strong>.
+                        These high-capacity furnaces ensure efficient melting with precise temperature and chemistry control, featuring:
+                    </p>
+                    <ul>
+                        <li>Energy-efficient operation</li>
+                        <li>Advanced pollution control systems</li>
+                        <li>Consistent molten metal quality</li>
+                        <li>Rapid melting capability</li>
+                    </ul>
+                </div>
+                <div className={styles.featureImage}>
+                    <Image
+                        src="/images/furnace_melting.jpg"
+                        alt="Induction Furnace"
+                        fill
+                        style={{ objectFit: 'cover', borderRadius: '8px' }}
+                    />
+                </div>
+            </section>
+
             <section className={styles.statsSection}>
                 <div className={styles.statBox}>
                     <h3>400 TPD</h3>
@@ -87,9 +112,18 @@ export default function Facility() {
             <section className={styles.gallerySection}>
                 <h2>Infrastructure Gallery</h2>
                 <div className={styles.galleryGrid}>
-                    <div className={styles.galleryItem}>Plant View 1</div>
-                    <div className={styles.galleryItem}>Plant View 2</div>
-                    <div className={styles.galleryItem}>Stock Yard</div>
+                    <div className={styles.galleryItem}>
+                        <Image src="/images/Billet-Manufacturing-CCM.jpg" alt="Billet CCM" fill style={{ objectFit: 'cover' }} />
+                    </div>
+                    <div className={styles.galleryItem}>
+                        <Image src="/images/factory_sparks.jpg" alt="Factory Operations" fill style={{ objectFit: 'cover' }} />
+                    </div>
+                    <div className={styles.galleryItem}>
+                        <Image src="/images/loading_crane.jpg" alt="Material Handling" fill style={{ objectFit: 'cover' }} />
+                    </div>
+                    <div className={styles.galleryItem}>
+                        <Image src="/images/rolling_mill_new.png" alt="Rolling Mill" fill style={{ objectFit: 'cover' }} />
+                    </div>
                 </div>
             </section>
         </main>
