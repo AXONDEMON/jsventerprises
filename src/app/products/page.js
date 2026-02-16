@@ -78,11 +78,17 @@ export default function Products() {
                             </div>
                             <div style={{ marginTop: '1rem' }}>
                                 <Image
-                                    src="/images/apl_apollo_amitabh.jpg"
+                                    src="/images/apl_apollo_amitabh_new.png"
                                     alt="APL Apollo - Amitabh Bachchan"
-                                    width={400}
-                                    height={200}
-                                    style={{ objectFit: 'cover', borderRadius: '8px', maxWidth: '100%' }}
+                                    width={500}
+                                    height={250}
+                                    style={{
+                                        objectFit: 'cover',
+                                        borderRadius: '8px',
+                                        width: '100%',
+                                        height: 'auto',
+                                        maxWidth: '500px'
+                                    }}
                                 />
                             </div>
                         </div>
