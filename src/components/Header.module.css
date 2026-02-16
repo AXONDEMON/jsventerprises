@@ -2,14 +2,12 @@
     background-color: var(--primary-color);
     /* Dark Blue */
     color: white;
-    padding: 0.75rem 0;
-    /* Professional vertical padding */
+    padding: 0;
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    min-height: 70px;
-    /* Maintain consistent height */
+    min-height: 75px;
     display: flex;
     align-items: center;
 }
@@ -18,37 +16,34 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    padding: 0 24px;
 }
 
 .logoContainer {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    background: transparent;
-    /* Clean look: remove white container background */
-    padding: 0;
-    border-radius: 0;
+    gap: 1.75rem;
+    flex: 1;
+    /* Give space to allow nav to center */
 }
 
 .mainLogo {
     display: flex;
     align-items: center;
-    height: 50px;
-    /* Consistency with target height */
+    height: 58px;
     overflow: hidden;
 }
 
 .mainLogo img {
-    height: 50px !important;
+    height: 58px !important;
     width: auto !important;
-    object-fit: cover !important;
-    object-position: top !important;
 }
 
 .divider {
     width: 1px;
-    height: 40px;
-    background-color: #ddd;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .partnerHeaderLogo {
@@ -58,15 +53,17 @@
 }
 
 .partnerLabel {
-    font-size: 0.7rem;
-    color: #555;
+    font-size: 0.65rem;
+    color: rgba(255, 255, 255, 0.6);
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 2px;
 }
 
 .nav {
     display: flex;
+    flex: 2;
+    justify-content: center;
 }
 
 .navList {
@@ -89,9 +86,15 @@
     color: var(--accent-color);
 }
 
+.cta {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .cta .btn {
-    padding: 8px 16px;
-    font-size: 0.9rem;
+    padding: 10px 20px;
+    font-size: 0.85rem;
 }
 
 /* Hamburger Menu */
@@ -175,25 +178,27 @@
 
     .logoContainer {
         padding: 0;
-        gap: 0.5rem;
-        max-width: 90%;
-        /* Ensure space for hamburger */
+        gap: 0.6rem;
+        max-width: 85%;
         background: transparent;
     }
 
     .mainLogo {
-        height: 38px;
+        height: 42px;
     }
 
     .mainLogo img {
-        height: 38px !important;
+        height: 42px !important;
         width: auto !important;
     }
 
     .partnerHeaderLogo img {
-        width: 60px;
-        /* Balanced partner logo */
+        width: 55px;
         height: auto;
+    }
+
+    .divider {
+        height: 25px;
     }
 
     .partnerLabel {

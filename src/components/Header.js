@@ -18,22 +18,22 @@ const Header = () => {
                 <div className={styles.logoContainer}>
                     <Link href="/" className={styles.mainLogo}>
                         <Image
-                            src="/images/JSV Enterprises-2.png"
+                            src="/images/Screenshot 2026-02-16 at 10.48.35 PM.png"
                             alt="JSV Enterprises Logo"
-                            width={120}
-                            height={50}
+                            width={140}
+                            height={60}
                             priority
                             className={styles.logoImage}
                         />
                     </Link>
                     <div className={styles.divider}></div>
                     <div className={styles.partnerHeaderLogo}>
-                        <span className={styles.partnerLabel}>Proud Authorized Partner</span>
+                        <span className={styles.partnerLabel}>Authorized Partner</span>
                         <Image
                             src="/images/aplapollo_logo.png"
                             alt="APL Apollo"
-                            width={120}
-                            height={40}
+                            width={100}
+                            height={35}
                             style={{ objectFit: 'contain' }}
                         />
                     </div>
