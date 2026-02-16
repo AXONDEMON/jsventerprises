@@ -54,6 +54,13 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 768px) {
+    .productImagePlaceholder {
+        height: 250px;
+        /* Slightly smaller on mobile to fit screen better */
+    }
+}
+
 .divider {
     border: 0;
     border-top: 1px solid #eee;

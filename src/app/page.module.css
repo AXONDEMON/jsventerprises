@@ -21,6 +21,16 @@
         gap: 1rem;
     }
 
+    .galleryGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+
+    .galleryItem {
+        height: 120px;
+        /* Smaller height for mobile grid */
+    }
+
     .statCard {
         padding: 1rem;
     }

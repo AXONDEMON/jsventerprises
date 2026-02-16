@@ -38,7 +38,7 @@ export default function Products() {
                     </div>
                     <div className={styles.productImagePlaceholder}>
                         <Image
-                            src="/images/image.png"
+                            src="/images/continuous_casting_new.png"
                             alt="Steel Billets Production - CCM"
                             fill
                             style={{ objectFit: 'cover' }}
@@ -89,7 +89,7 @@ export default function Products() {
                     </div>
                     <div className={styles.productImagePlaceholder}>
                         <Image
-                            src="/images/rolling_mill.jpg"
+                            src="/images/rolling_mill_new.png"
                             alt="Structural Steel Production"
                             fill
                             style={{ objectFit: 'cover' }}
