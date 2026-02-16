@@ -20,8 +20,8 @@ const Header = () => {
                         <Image
                             src="/images/JSV Enterprises-2.png"
                             alt="JSV Enterprises Logo"
-                            width={240}
-                            height={80}
+                            width={300}
+                            height={100}
                             priority
                             style={{ objectFit: 'contain' }}
                         />
