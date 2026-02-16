@@ -20,10 +20,10 @@ const Header = () => {
                         <Image
                             src="/images/JSV Enterprises-2.png"
                             alt="JSV Enterprises Logo"
-                            width={320}
-                            height={110}
+                            width={120}
+                            height={50}
                             priority
-                            style={{ objectFit: 'contain' }}
+                            className={styles.logoImage}
                         />
                     </Link>
                     <div className={styles.divider}></div>
