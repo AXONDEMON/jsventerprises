@@ -21,9 +21,9 @@ export default function Contact() {
                             <div className={styles.addressBlock}>
                                 <h3>🏭 Plant Address</h3>
                                 <p>
-                                    Plot No. 48, Village- Konra<br />
+                                    13/1-A, Village Konra<br />
                                     Barhi Industrial Area<br />
-                                    Barhi, Dist.- Hazaribagh<br />
+                                    Barhi, Hazaribagh<br />
                                     Jharkhand – 825405
                                 </p>
                             </div>
@@ -58,7 +58,7 @@ export default function Contact() {
                         {/* Simple Map Embed Placeholder - In production use real Google Maps Embed API */}
                         <div className={styles.mapContainer}>
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14602.26123456789!2d85.35!3d24.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDE4JzAwLjAiTiA4NcKwMjEnMDAuMCJF!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3636.332450749408!2d85.43334287535309!3d24.300036278299384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f36fdb76bbeaef%3A0xcafe5747c020777a!2sJSV%20enterprise!5e0!3m2!1sen!2sin!4v1771314856994!5m2!1sen!2sin"
                                 width="100%"
                                 height="300"
                                 style={{ border: 0 }}
