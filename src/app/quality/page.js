@@ -22,7 +22,7 @@ export default function Quality() {
                         <div className={styles.icon}>📏</div>
                         <h3>Dimensional Accuracy</h3>
                         <p>
-                            Our 10-stand automatic rolling mill ensures that every bar and section produced has precise dimensions,
+                            Our 12-stand automatic rolling mill ensures that every bar and section produced has precise dimensions,
                             eliminating the risk of structural inconsistencies.
                         </p>
                     </div>

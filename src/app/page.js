@@ -38,7 +38,7 @@ export default function Home() {
                 <p>Structural Steel</p>
               </div>
               <div className={styles.statCard}>
-                <h3>10-Stand</h3>
+                <h3>12-Stand</h3>
                 <p>Automatic Rolling Mill</p>
               </div>
             </div>
@@ -86,7 +86,7 @@ export default function Home() {
                 <Image src="/images/rolling_mill_new.png" alt="Rolling" fill style={{ objectFit: 'cover' }} />
               </div>
               <h3>Rolling</h3>
-              <p>Hot rolling in our automated 10-stand mill.</p>
+              <p>Hot rolling in our automated 12-stand mill.</p>
             </div>
             <div className={styles.processCard}>
               <div className={styles.processImageContainer}>
@@ -136,7 +136,7 @@ export default function Home() {
       <section className={styles.parallaxSection}>
         <div className={styles.parallaxOverlay}>
           <h2>World Class Infrastructure</h2>
-          <p>Fully Automatic 10-Stand Rolling Mill</p>
+          <p>Fully Automatic 12-Stand Rolling Mill</p>
           <p>3 x 12 Tonnes Electric Furnaces</p>
           <p>Continuous Casting Machine (CCM)</p>
           <p>High-Capacity Crushing Machines</p>
@@ -152,8 +152,8 @@ export default function Home() {
           <div className={styles.productCard}>
             <div className={styles.cardImage}>
               <Image
-                src="/images/image.png"
-                alt="Steel Billets"
+                src="/images/rolling_mill_new.png"
+                alt="Steel Rolling"
                 fill
                 style={{ objectFit: 'cover' }}
               />
@@ -165,14 +165,14 @@ export default function Home() {
           <div className={styles.productCard}>
             <div className={styles.cardImage}>
               <Image
-                src="/images/loading_crane.jpg"
+                src="/images/steel_stack.jpg"
                 alt="Structural Steel"
                 fill
                 style={{ objectFit: 'cover' }}
               />
             </div>
             <h3>Structural Steel</h3>
-            <p>Angles, Channels, and Square Bars (25mm-75mm). Manufactured using our 10-stand automatic mill.</p>
+            <p>Angles, Channels, and Square Bars (25mm-75mm). Manufactured using our 12-stand automatic mill.</p>
             <Link href="/products" className={styles.textLink}>Learn More &rarr;</Link>
           </div>
         </div>
@@ -187,10 +187,10 @@ export default function Home() {
               <Image src="/images/Billet-Manufacturing-CCM.jpg" alt="Rolling Mill" fill style={{ objectFit: 'cover' }} />
             </div>
             <div className={styles.galleryItem}>
-              <Image src="/images/loading_crane.jpg" alt="Skilled Workforce" fill style={{ objectFit: 'cover' }} />
+              <Image src="/images/quality_testing_new.png" alt="Quality Testing" fill style={{ objectFit: 'cover' }} />
             </div>
             <div className={styles.galleryItem}>
-              <Image src="/images/img_copy_2.png" alt="Continuous Casting" fill style={{ objectFit: 'cover' }} />
+              <Image src="/images/continuous_casting_new.png" alt="Continuous Casting" fill style={{ objectFit: 'cover' }} />
             </div>
             <div className={styles.galleryItem}>
               <Image src="/images/partners_hero.jpg" alt="Production Quality" fill style={{ objectFit: 'cover' }} />

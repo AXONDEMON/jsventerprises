@@ -3,7 +3,7 @@ import styles from './page.module.css';
 
 export const metadata = {
     title: 'Manufacturing Facility | JSV Enterprises',
-    description: 'State-of-the-art steel manufacturing facility in Jharkhand with 10-stand automatic rolling mill.',
+    description: 'State-of-the-art steel manufacturing facility in Jharkhand with 12-stand automatic rolling mill.',
 };
 
 export default function Facility() {
@@ -16,9 +16,9 @@ export default function Facility() {
 
             <section className={styles.featureSection}>
                 <div className={styles.featureText}>
-                    <h2>Tech Highlight: 10-Stand Automatic Rolling Mill</h2>
+                    <h2>Tech Highlight: 12-Stand Automatic Rolling Mill</h2>
                     <p>
-                        At the heart of our operations lies our fully automatic <strong>10-stand rolling mill</strong>.
+                        At the heart of our operations lies our fully automatic <strong>12-stand rolling mill</strong>.
                         This advanced machinery allows for continuous production with minimal manual intervention, ensuring:
                     </p>
                     <ul>
@@ -30,8 +30,8 @@ export default function Facility() {
                 </div>
                 <div className={styles.featureImage}>
                     <Image
-                        src="/images/rolling_mill.jpg"
-                        alt="10-Stand Automatic Rolling Mill"
+                        src="/images/rolling_mill_new.png"
+                        alt="12-Stand Automatic Rolling Mill"
                         fill
                         style={{ objectFit: 'cover', borderRadius: '8px' }}
                     />
@@ -55,7 +55,7 @@ export default function Facility() {
                 </div>
                 <div className={styles.featureImage}>
                     <Image
-                        src="/images/furnace_melting.jpg"
+                        src="/images/melting_refining_new.png"
                         alt="Induction Furnace"
                         fill
                         style={{ objectFit: 'cover', borderRadius: '8px' }}
@@ -99,7 +99,7 @@ export default function Facility() {
                     <div className={styles.step}>
                         <div className={styles.stepNumber}>4</div>
                         <h3>Rolling</h3>
-                        <p>Shaping through our 10-stand automatic mill.</p>
+                        <p>Shaping through our 12-stand automatic mill.</p>
                     </div>
                     <div className={styles.step}>
                         <div className={styles.stepNumber}>5</div>
@@ -116,10 +116,10 @@ export default function Facility() {
                         <Image src="/images/Billet-Manufacturing-CCM.jpg" alt="Billet CCM" fill style={{ objectFit: 'cover' }} />
                     </div>
                     <div className={styles.galleryItem}>
-                        <Image src="/images/factory_sparks.jpg" alt="Factory Operations" fill style={{ objectFit: 'cover' }} />
+                        <Image src="/images/continuous_casting_new.png" alt="Continuous Casting" fill style={{ objectFit: 'cover' }} />
                     </div>
                     <div className={styles.galleryItem}>
-                        <Image src="/images/loading_crane.jpg" alt="Material Handling" fill style={{ objectFit: 'cover' }} />
+                        <Image src="/images/quality_testing_new.png" alt="Quality Testing" fill style={{ objectFit: 'cover' }} />
                     </div>
                     <div className={styles.galleryItem}>
                         <Image src="/images/rolling_mill_new.png" alt="Rolling Mill" fill style={{ objectFit: 'cover' }} />

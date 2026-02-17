@@ -21,7 +21,7 @@ export default function About() {
                         </p>
                         <p>
                             Our state-of-the-art facility boasts a <strong>400 TPD capacity</strong> for both Steel Billets and Structural Steel products.
-                            Equipped with a fully automatic 10-stand rolling mill, we ensure precision and excellence in every ton of steel we produce.
+                            Equipped with a fully automatic 12-stand rolling mill, we ensure precision and excellence in every ton of steel we produce.
                         </p>
 
                         <div className={styles.missionVision}>

@@ -18,7 +18,7 @@ export default function Careers() {
                         <h2>Join Our Team</h2>
                         <p>
                             At JSV Enterprises, we believe that our strength lies in our people.
-                            As a rapidly growing steel manufacturing company with a 400 TPD capacity and a state-of-the-art 10-stand automatic rolling mill,
+                            As a rapidly growing steel manufacturing company with a 400 TPD capacity and a state-of-the-art 12-stand automatic rolling mill,
                             we are constantly looking for talented, dedicated, and driven individuals to join our workforce.
                         </p>
                         <p>

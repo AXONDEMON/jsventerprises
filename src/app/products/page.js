@@ -55,7 +55,7 @@ export default function Products() {
                         <p className={styles.specHighlight}>Capacity: 400 TPD</p>
                         <p>
                             We produce a wide range of structural steel products including Angles, Channels, and Square Bars.
-                            Our fully automatic <strong>10-stand rolling mill</strong> ensures precise dimensions and superior straightness.
+                            Our fully automatic <strong>12-stand rolling mill</strong> ensures precise dimensions and superior straightness.
                         </p>
 
                         <h3>Product Range</h3>
