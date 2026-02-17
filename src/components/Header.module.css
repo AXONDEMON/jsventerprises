@@ -7,7 +7,7 @@
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    min-height: 75px;
+    min-height: 65px;
     display: flex;
     align-items: center;
 }
@@ -31,18 +31,18 @@
 .mainLogo {
     display: flex;
     align-items: center;
-    height: 58px;
+    height: 45px;
     overflow: hidden;
 }
 
 .mainLogo img {
-    height: 58px !important;
+    height: 45px !important;
     width: auto !important;
 }
 
 .divider {
     width: 1px;
-    height: 35px;
+    height: 28px;
     background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -184,21 +184,21 @@
     }
 
     .mainLogo {
-        height: 42px;
+        height: 35px;
     }
 
     .mainLogo img {
-        height: 42px !important;
+        height: 35px !important;
         width: auto !important;
     }
 
     .partnerHeaderLogo img {
-        width: 55px;
+        width: 48px;
         height: auto;
     }
 
     .divider {
-        height: 25px;
+        height: 20px;
     }
 
     .partnerLabel {

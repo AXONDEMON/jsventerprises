@@ -20,8 +20,8 @@ const Header = () => {
                         <Image
                             src="/images/Screenshot 2026-02-16 at 10.48.35 PM.png"
                             alt="JSV Enterprises Logo"
-                            width={140}
-                            height={60}
+                            width={105}
+                            height={45}
                             priority
                             className={styles.logoImage}
                         />
