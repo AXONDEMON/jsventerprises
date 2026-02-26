@@ -18,6 +18,9 @@ const openSans = Open_Sans({
 export const metadata = {
   title: 'JSV Enterprises | Premium Steel Manufacturing in Jharkhand',
   description: 'Producers of 400 TPD Steel Billets and Structural Steel. Partners with APL APOLLO and SG Mart. Located in Barhi, Jharkhand.',
+  verification: {
+    google: 'vTYlO3Zd9fBbT9Un8HRWJzorsOOjmfK3RNSE',
+  },
 };
 
 export default function RootLayout({ children }) {
