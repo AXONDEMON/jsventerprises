@@ -18,13 +18,12 @@ const Header = () => {
                 <div className={styles.logoContainer}>
                     <Link href="/" className={styles.mainLogo}>
                         <Image
-                            src="/images/JSV Enterprises-2.png"
+                            src="/images/jsv_logo_header.svg"
                             alt="JSV Enterprises Logo"
-                            width={35}
-                            height={35}
+                            width={120}
+                            height={36}
                             priority
                             className={styles.logoImage}
-                            style={{ objectFit: 'contain' }}
                         />
                     </Link>
                     <div className={styles.divider}></div>

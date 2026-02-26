@@ -31,12 +31,12 @@
 .mainLogo {
     display: flex;
     align-items: center;
-    height: 35px;
+    height: 38px;
     overflow: hidden;
 }
 
 .mainLogo img {
-    height: 35px !important;
+    height: 38px !important;
     width: auto !important;
 }
 
