@@ -6,16 +6,6 @@ import styles from './page.module.css';
 export default function Home() {
   return (
     <main>
-      <div style={{ background: '#0056b3', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', padding: '0.5rem', fontWeight: 'bold' }}>
-        <span>Proud Authorized Partner of</span>
-        <Image
-          src="/images/aplapollo_logo.png"
-          alt="APL APOLLO"
-          width={100}
-          height={30}
-          style={{ objectFit: 'contain', background: 'white', padding: '2px', borderRadius: '4px' }}
-        />
-      </div>
       {/* Hero Section */}
       <Hero />
 
@@ -23,23 +13,24 @@ export default function Home() {
       <section className="section container">
         <div className={styles.introLayout}>
           <div className={styles.introContent}>
-            <h2>Welcome to JSV Enterprises</h2>
+            <h2 className="section-title">Industrial Excellence in Steel</h2>
             <p className={styles.lead}>
-              A leader in steel manufacturing based in Barhi, Jharkhand. We specialize in high-quality Steel Billets and Structural Steel products with a production capacity of 400 TPD.
-              Proudly associated with <strong>APL APOLLO</strong> and <strong>SG Mart Limited</strong>.
+              JSV Enterprises is a premier manufacturer of high-grade steel products in Barhi, Jharkhand.
+              Our state-of-the-art facility combines technological innovation with a commitment to unyielding quality.
+              Proudly delivering <strong>400 TPD</strong> capacity in association with industry giants <strong>APL APOLLO</strong> and <strong>SG Mart Limited</strong>.
             </p>
             <div className={styles.statsGrid}>
               <div className={styles.statCard}>
-                <h3>400 TPD</h3>
-                <p>Billet Capacity</p>
+                <h3>400</h3>
+                <p>TPD Capacity</p>
               </div>
               <div className={styles.statCard}>
-                <h3>400 TPD</h3>
-                <p>Structural Steel</p>
+                <h3>12</h3>
+                <p>Stand Mill</p>
               </div>
               <div className={styles.statCard}>
-                <h3>12-Stand</h3>
-                <p>Automatic Rolling Mill</p>
+                <h3>ISO</h3>
+                <p>Certified Quality</p>
               </div>
             </div>
           </div>
@@ -48,8 +39,8 @@ export default function Home() {
               src="/images/factory_sparks.jpg"
               alt="Steel Manufacturing Process"
               width={600}
-              height={400}
-              style={{ objectFit: 'cover', borderRadius: '8px' }}
+              height={450}
+              style={{ objectFit: 'cover', borderRadius: '16px', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}
             />
           </div>
         </div>
@@ -58,42 +49,42 @@ export default function Home() {
       {/* Production Process Section */}
       <section className={`${styles.processSection} section`}>
         <div className="container">
-          <h2 className={styles.sectionTitleWhite}>Our Production Process</h2>
+          <h2 className={styles.sectionTitleWhite}>Engineered for Quality</h2>
           <div className={styles.processGrid}>
             <div className={styles.processCard}>
               <div className={styles.processImageContainer}>
                 <Image src="/images/raw_material_new.png" alt="Raw Material" fill style={{ objectFit: 'cover' }} />
               </div>
               <h3>Raw Material</h3>
-              <p>Selection of high-grade Sponge Iron and Scrap.</p>
+              <p>Rigorous selection of premium Sponge Iron and calibrated scrap.</p>
             </div>
             <div className={styles.processCard}>
               <div className={styles.processImageContainer}>
                 <Image src="/images/melting_refining_new.png" alt="Melting" fill style={{ objectFit: 'cover' }} />
               </div>
               <h3>Melting & Refining</h3>
-              <p>Induction Furnace melting with precise chemistry control.</p>
+              <p>Advanced Induction Furnace with real-time chemistry monitoring.</p>
             </div>
             <div className={styles.processCard}>
               <div className={styles.processImageContainer}>
                 <Image src="/images/continuous_casting_new.png" alt="Casting" fill style={{ objectFit: 'cover' }} />
               </div>
               <h3>Continuous Casting</h3>
-              <p>Casting into high-quality billets using CCM.</p>
+              <p>Modern CCM technology for consistent, defect-free steel billets.</p>
             </div>
             <div className={styles.processCard}>
               <div className={styles.processImageContainer}>
                 <Image src="/images/rolling_mill_new.png" alt="Rolling" fill style={{ objectFit: 'cover' }} />
               </div>
-              <h3>Rolling</h3>
-              <p>Hot rolling in our automated 12-stand mill.</p>
+              <h3>Precision Rolling</h3>
+              <p>Fully automated 12-stand mill for perfect structural dimensions.</p>
             </div>
             <div className={styles.processCard}>
               <div className={styles.processImageContainer}>
                 <Image src="/images/quality_testing_new.png" alt="Quality Check" fill style={{ objectFit: 'cover' }} />
               </div>
-              <h3>Quality Testing</h3>
-              <p>Rigorous physical and chemical testing.</p>
+              <h3>Rigorous Testing</h3>
+              <p>In-house Spectro Labs ensuring compliance with IS standards.</p>
             </div>
           </div>
         </div>
@@ -102,8 +93,8 @@ export default function Home() {
       {/* Brand Partnerships */}
       <section className={styles.partnersSection}>
         <div className="container">
-          <h2>In Association with APL APOLLO</h2>
-          <p>We are proud to be a key partner of India's largest structural steel tube manufacturer.</p>
+          <h2 className="section-title">Strategic Associations</h2>
+          <p className={styles.lead}>Strengthening the nation's infrastructure through quality and scale.</p>
 
           <div className={styles.brandFeature}>
             <Image
@@ -111,7 +102,7 @@ export default function Home() {
               alt="APL Apollo - Amitabh Bachchan"
               width={800}
               height={400}
-              style={{ objectFit: 'cover', borderRadius: '12px', margin: '2rem auto', display: 'block', maxWidth: '100%' }}
+              style={{ objectFit: 'cover', borderRadius: '16px', margin: '2rem auto', display: 'block', maxWidth: '100%', boxShadow: '0 10px 40px rgba(0,0,0,0.1)' }}
             />
           </div>
 
@@ -120,13 +111,13 @@ export default function Home() {
               <Image
                 src="/images/aplapollo_logo.png"
                 alt="APL APOLLO"
-                width={200}
-                height={80}
+                width={180}
+                height={60}
                 style={{ objectFit: 'contain' }}
               />
             </div>
-            <div className={styles.partnerLogo}>
-              <span>SG Mart Limited</span>
+            <div className={styles.brandName}>
+              <span>SG MART LIMITED</span>
             </div>
           </div>
         </div>

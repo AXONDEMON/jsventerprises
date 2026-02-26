@@ -36,17 +36,6 @@ const Header = () => {
                             className={styles.logoImage}
                         />
                     </Link>
-                    <div className={styles.divider}></div>
-                    <div className={styles.partnerHeaderLogo}>
-                        <span className={styles.partnerLabel}>Authorized Partner</span>
-                        <Image
-                            src="/images/aplapollo_logo.png"
-                            alt="APL Apollo"
-                            width={100}
-                            height={35}
-                            style={{ objectFit: 'contain' }}
-                        />
-                    </div>
                 </div>
 
                 <div className={`${styles.overlay} ${isMenuOpen ? styles.overlayActive : ''}`} onClick={closeMenu}></div>

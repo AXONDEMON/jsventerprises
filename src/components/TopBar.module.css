@@ -1,0 +1,48 @@
+.topBar {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eee;
+    padding: 0.5rem 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partnerInfo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.label {
+    font-size: 0.85rem;
+    color: #555;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.logoWrapper {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.partnerLogo {
+    object-fit: contain;
+}
+
+@media (max-width: 480px) {
+    .label {
+        font-size: 0.75rem;
+    }
+
+    .partnerInfo {
+        gap: 8px;
+    }
+}

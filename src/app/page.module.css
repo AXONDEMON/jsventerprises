@@ -65,17 +65,30 @@
 .statCard {
     background: white;
     padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    border-top: 4px solid var(--accent-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-bottom: 4px solid var(--accent-color);
     text-align: center;
+    transition: transform 0.3s ease;
 }
 
+.statCard:hover {
+    transform: translateY(-5px);
+}
 
 .statCard h3 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: var(--primary-color);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
+    font-weight: 800;
+}
+
+.statCard p {
+    font-weight: 600;
+    color: #666;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .partnersSection {
@@ -122,10 +135,15 @@
     transform: scale(1.05);
 }
 
-.productsGrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+.brandName {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #444;
+    letter-spacing: 2px;
+    border: 2px solid #ddd;
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+    background: white;
 }
 
 @media (min-width: 768px) {
@@ -308,37 +326,50 @@
 }
 
 .processCard {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
-    padding: 2rem;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: transform 0.3s;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    padding: 2rem 1.5rem;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .processCard:hover {
-    transform: translateY(-10px);
-    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-12px);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: var(--accent-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 .processImageContainer {
     width: 100%;
-    height: 180px;
+    height: 160px;
     position: relative;
     margin-bottom: 1.5rem;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
+    filter: grayscale(20%);
+    transition: filter 0.3s;
+}
+
+.processCard:hover .processImageContainer {
+    filter: grayscale(0%);
 }
 
 .processCard h3 {
     color: var(--accent-color);
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    font-weight: 700;
 }
 
 .processCard p {
-    font-size: 0.9rem;
-    opacity: 0.9;
+    font-size: 0.95rem;
+    opacity: 0.85;
+    line-height: 1.5;
 }
 
 .parallaxSection {
