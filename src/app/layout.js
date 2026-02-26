@@ -21,6 +21,9 @@ export const metadata = {
   verification: {
     google: 'vTYlO3Zd9fBbT9Un8HRWJzorsOOjmfK3RNSE',
   },
+  icons: {
+    icon: '/images/aplapollo_logo.ico',
+  },
 };
 
 export default function RootLayout({ children }) {
