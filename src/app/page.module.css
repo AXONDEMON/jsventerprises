@@ -1,48 +1,25 @@
+.introLayout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+@media (min-width: 900px) {
+    .introLayout {
+        flex-direction: row;
+        align-items: center;
+        gap: 3rem;
+    }
+}
+
 .introContent {
     flex: 1;
 }
 
-.introLayout {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    margin-bottom: 2rem;
-}
-
-@media (max-width: 900px) {
-    .introLayout {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .statsGrid {
-        grid-template-columns: repeat(2, 1fr);
-        /* 2 cols on mobile instead of 1 if possible */
-        gap: 1rem;
-    }
-
-    .galleryGrid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.5rem;
-    }
-
-    .galleryItem {
-        height: 120px;
-        /* Smaller height for mobile grid */
-    }
-
-    .statCard {
-        padding: 1rem;
-    }
-
-    .statCard h3 {
-        font-size: 1.5rem;
-    }
-}
-
 .introImage {
-    flex: 1;
     display: none;
+    flex: 1;
 }
 
 @media (min-width: 900px) {
@@ -52,24 +29,44 @@
 }
 
 .lead {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #555;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+    .lead {
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
+    }
 }
 
 .statsGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
     margin-top: 2rem;
+}
+
+@media (min-width: 480px) {
+    .statsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .statsGrid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
 }
 
 .statCard {
     background: white;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     border-top: 4px solid var(--accent-color);
     text-align: center;
 }
@@ -89,10 +86,18 @@
 
 .logoGrid {
     display: flex;
-    justify-content: center;
-    gap: 4rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
     margin-top: 2rem;
-    flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+    .logoGrid {
+        flex-direction: row;
+        justify-content: center;
+        gap: 4rem;
+    }
 }
 
 .partnerCard {
@@ -119,23 +124,42 @@
 
 .productsGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: 1fr;
     gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .productsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .productCard {
     background: white;
     border: 1px solid #eee;
-    padding: 2rem;
-    border-radius: 8px;
-    transition: transform 0.3s;
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
     overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+@media (min-width: 768px) {
+    .productCard {
+        padding: 2rem;
+    }
 }
 
 .cardImage {
     position: relative;
     height: 200px;
-    margin: -2rem -2rem 1.5rem -2rem;
+    margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+}
+
+@media (min-width: 768px) {
+    .cardImage {
+        margin: -2rem -2rem 1.5rem -2rem;
+    }
 }
 
 .productCard:hover {
@@ -155,17 +179,36 @@
 
 .galleryGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 480px) {
+    .galleryGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .galleryGrid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+    }
 }
 
 .galleryItem {
     position: relative;
-    height: 250px;
+    height: 200px;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+}
+
+@media (min-width: 768px) {
+    .galleryItem {
+        height: 250px;
+    }
 }
 
 .galleryItem:hover {
@@ -183,7 +226,13 @@
     background-color: var(--primary-color);
     color: white;
     text-align: center;
-    padding: 5rem 0;
+    padding: 4rem 1rem;
+}
+
+@media (min-width: 768px) {
+    .ctaSection {
+        padding: 6rem 0;
+    }
 }
 
 .ctaSection h2 {
@@ -201,10 +250,18 @@
     background-image: url('/images/process_bg.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
+    /* Default scroll for mobile */
     position: relative;
-    padding: 5rem 0;
+    padding: 4rem 0;
     color: white;
+}
+
+@media (min-width: 1024px) {
+    .processSection {
+        background-attachment: fixed;
+        padding: 6rem 0;
+    }
 }
 
 .processSection::before {
@@ -232,9 +289,22 @@
 
 .processGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
     text-align: center;
+}
+
+@media (min-width: 640px) {
+    .processGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .processGrid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2rem;
+    }
 }
 
 .processCard {
@@ -288,7 +358,7 @@
     .parallaxSection {
         padding: 3rem 1rem;
         background-attachment: scroll;
-        /* Fix for mobile parallax jitters */
+        margin: 2rem 0;
     }
 
     .parallaxOverlay {
@@ -296,21 +366,13 @@
         width: 100%;
     }
 
-    .parallaxSection h2 {
-        font-size: 1.8rem;
-    }
-
     .processSection {
-        padding: 3rem 0;
-    }
-
-    .sectionTitleWhite {
-        font-size: 2rem;
+        padding: 3rem 1rem;
     }
 
     .gallerySection,
     .ctaSection {
-        padding: 3rem 0;
+        padding: 3rem 1rem;
     }
 }
 

@@ -1,66 +1,120 @@
 .title {
     text-align: center;
-    margin-bottom: 3rem;
-    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .title {
+        margin-bottom: 3rem;
+    }
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 4rem;
+    display: flex;
+    flex-direction: column-reverse;
+    /* Put highlights after content on mobile */
+    gap: 2.5rem;
+}
+
+@media (min-width: 900px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 4rem;
+        flex-direction: row;
+    }
 }
 
 .intro {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 2rem;
-    line-height: 1.8;
+    line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+    .intro {
+        font-size: 1.2rem;
+        line-height: 1.8;
+    }
 }
 
 .subtitle {
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
-    font-size: 1.8rem;
+}
+
+@media (min-width: 768px) {
+    .subtitle {
+        margin-top: 3rem;
+    }
 }
 
 .missionVision {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+@media (min-width: 768px) {
+    .missionVision {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin: 3rem 0;
+    }
 }
 
 .mvCard {
     background: var(--neutral-light);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 8px;
     border-left: 4px solid var(--primary-color);
 }
 
+@media (min-width: 768px) {
+    .mvCard {
+        padding: 2rem;
+    }
+}
+
 .leadershipList {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
     gap: 1rem;
     list-style: none;
     padding: 0;
+}
+
+@media (min-width: 768px) {
+    .leadershipList {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 }
 
 .leadershipList li {
     background: white;
     padding: 1rem;
     border: 1px solid #eee;
-    border-radius: 4px;
+    border-radius: 12px;
     font-weight: 600;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .highlightBox {
     background: var(--neutral-dark);
     color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    position: sticky;
-    top: 100px;
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+@media (min-width: 900px) {
+    .highlightBox {
+        padding: 2rem;
+        position: sticky;
+        top: 100px;
+    }
 }
 
 .highlightBox h3 {
@@ -79,6 +133,7 @@
     margin-bottom: 1rem;
     padding-left: 1.5rem;
     position: relative;
+    font-size: 0.95rem;
 }
 
 .highlightBox li::before {
@@ -86,25 +141,4 @@
     color: var(--accent-color);
     position: absolute;
     left: 0;
-}
-
-@media (max-width: 768px) {
-    .grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .title {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    .missionVision {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .subtitle {
-        font-size: 1.5rem;
-    }
 }

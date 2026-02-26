@@ -125,10 +125,11 @@
     display: none;
 }
 
+/* Mobile Nav Overhaul - Slide from Right */
 @media (max-width: 900px) {
     .header {
         padding: 0.5rem 0;
-        min-height: 60px;
+        min-height: 65px;
     }
 
     .container {
@@ -137,63 +138,95 @@
 
     .hamburger {
         display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 22px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 1002;
     }
 
     .nav {
-        display: none;
-        /* Default hidden */
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
+        display: flex !important;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        /* Hidden by default */
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
         background-color: var(--primary-color);
-        padding: 2rem;
+        padding: 5rem 2rem 2rem;
         flex-direction: column;
-        align-items: center;
-        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+        align-items: flex-start;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+        transition: right 0.4s ease-in-out;
+        z-index: 1001;
     }
 
     .navActive {
-        display: flex;
-        animation: slideDown 0.3s ease-in-out forwards;
+        right: 0;
     }
 
-    @keyframes slideDown {
-        from {
-            opacity: 0;
-            transform: translateY(-10px);
-        }
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 1000;
+        backdrop-filter: blur(2px);
+    }
 
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    .overlayActive {
+        opacity: 1;
+        visibility: visible;
     }
 
     .navList {
         flex-direction: column;
         gap: 1.5rem;
-        text-align: center;
+        text-align: left;
+        width: 100%;
+    }
+
+    .navItem {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        padding-bottom: 0.75rem;
+    }
+
+    .navItem a {
+        font-size: 1.15rem;
+        display: block;
+        width: 100%;
     }
 
     .logoContainer {
         padding: 0;
         gap: 0.6rem;
-        max-width: 85%;
-        background: transparent;
+        flex: 1;
+        max-width: 80%;
     }
 
     .mainLogo {
-        height: 35px;
+        height: 32px;
     }
 
     .mainLogo img {
-        height: 35px !important;
+        height: 32px !important;
         width: auto !important;
     }
 
     .partnerHeaderLogo img {
-        width: 48px;
+        width: 42px;
         height: auto;
     }
 
@@ -202,27 +235,20 @@
     }
 
     .partnerLabel {
-        font-size: 0.5rem;
         display: none;
-        /* Hide label on really small screens if needed, or keep small */
     }
 
-    .logo {
-        max-width: 100px;
-    }
-
-    .hamburger {
-        display: flex;
-        z-index: 2000;
-        /* Ensure strictly on top */
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        border-radius: 10px;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         position: relative;
-        margin-left: auto;
-        /* Push to right */
     }
 
-    /* Animate Hamburger */
     .barOne {
-        transform: rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
     }
 
     .barTwo {
@@ -230,16 +256,10 @@
     }
 
     .barThree {
-        transform: rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
     }
 
     .cta {
         display: none;
-        /* Hide desktop CTA */
-    }
-
-    .mobileCta {
-        display: block;
-        margin-top: 1rem;
     }
 }

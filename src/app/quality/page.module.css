@@ -1,32 +1,59 @@
 .title {
     text-align: center;
     margin-bottom: 2rem;
-    font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .title {
+        margin-bottom: 3rem;
+    }
 }
 
 .intro {
     text-align: center;
     max-width: 800px;
-    margin: 0 auto 4rem;
-    font-size: 1.2rem;
+    margin: 0 auto 3rem;
+    font-size: 1.1rem;
     color: #555;
+    padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+    .intro {
+        margin: 0 auto 4rem;
+        font-size: 1.2rem;
+    }
 }
 
 .qualityGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    margin-bottom: 4rem;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+
+@media (min-width: 768px) {
+    .qualityGrid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin-bottom: 4rem;
+    }
 }
 
 .card {
     background: white;
-    padding: 2.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     border-top: 4px solid var(--primary-color);
     text-align: center;
     transition: transform 0.3s;
+}
+
+@media (min-width: 768px) {
+    .card {
+        padding: 2.5rem;
+    }
 }
 
 .card:hover {
@@ -34,21 +61,34 @@
 }
 
 .icon {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .icon {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
 }
 
 .card h3 {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     margin-bottom: 1rem;
     color: var(--primary-color);
 }
 
 .labSection {
     background: var(--neutral-light);
-    padding: 4rem 2rem;
-    border-radius: 8px;
+    padding: 3rem 1.5rem;
+    border-radius: 12px;
     text-align: center;
+}
+
+@media (min-width: 768px) {
+    .labSection {
+        padding: 4rem 2rem;
+    }
 }
 
 .labSection h2 {
@@ -59,5 +99,11 @@
 .labSection p {
     max-width: 700px;
     margin: 0 auto;
-    font-size: 1.1rem;
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .labSection p {
+        font-size: 1.1rem;
+    }
 }

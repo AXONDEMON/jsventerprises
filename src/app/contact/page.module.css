@@ -1,20 +1,39 @@
 .title {
     text-align: center;
-    margin-bottom: 3rem;
-    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .title {
+        margin-bottom: 3rem;
+    }
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+@media (min-width: 900px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
 }
 
 .infoCard {
     margin-bottom: 2rem;
     background: var(--neutral-light);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+    .infoCard {
+        padding: 2rem;
+    }
 }
 
 .infoCard h2 {
@@ -37,13 +56,21 @@
 .contactItem {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .contactItem {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
 }
 
 .icon {
     margin-right: 1rem;
     font-size: 1.5rem;
+    flex-shrink: 0;
 }
 
 .whatsappBtn {
@@ -52,12 +79,21 @@
     justify-content: center;
     background-color: #25D366;
     color: white;
-    padding: 10px 20px;
+    padding: 0.75rem 1.5rem;
     border-radius: 4px;
     font-weight: bold;
     text-decoration: none;
     margin-top: 1.5rem;
     transition: background-color 0.3s;
+    min-height: 48px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .whatsappBtn {
+        width: auto;
+        display: inline-flex;
+    }
 }
 
 .whatsappBtn:hover {
@@ -67,15 +103,21 @@
 .mapContainer {
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .formWrapper {
     background: white;
-    padding: 2.5rem;
-    border-radius: 8px;
+    padding: 1.5rem;
+    border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     border: 1px solid #eee;
+}
+
+@media (min-width: 768px) {
+    .formWrapper {
+        padding: 2.5rem;
+    }
 }
 
 .formWrapper h2 {
@@ -86,6 +128,7 @@
 .formWrapper p {
     color: #666;
     margin-bottom: 2rem;
+    font-size: 0.95rem;
 }
 
 .formGroup {
@@ -103,11 +146,16 @@
 .formGroup select,
 .formGroup textarea {
     width: 100%;
-    padding: 10px;
+    padding: 0.75rem;
     border: 1px solid #ddd;
     border-radius: 4px;
     font-family: inherit;
     font-size: 1rem;
+    min-height: 48px;
+}
+
+.formGroup textarea {
+    min-height: 120px;
 }
 
 .formGroup input:focus,
@@ -116,21 +164,4 @@
     outline: none;
     border-color: var(--secondary-color);
     box-shadow: 0 0 0 2px rgba(65, 90, 119, 0.2);
-}
-
-@media (max-width: 768px) {
-    .grid {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-    }
-
-    .title {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    .formWrapper {
-        padding: 1.5rem;
-        /* Reduced padding for mobile form */
-    }
 }

@@ -1,33 +1,63 @@
 .title {
     text-align: center;
-    margin-bottom: 2rem;
-    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .title {
+        margin-bottom: 2rem;
+    }
 }
 
 .intro {
     text-align: center;
     max-width: 800px;
-    margin: 0 auto 4rem;
-    font-size: 1.2rem;
+    margin: 0 auto 3rem;
+    font-size: 1.1rem;
     color: #555;
+    padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+    .intro {
+        margin: 0 auto 4rem;
+        font-size: 1.2rem;
+    }
 }
 
 .productSection {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     align-items: center;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
-/* Alternate layout */
-.productSection:nth-of-type(even) .productInfo {
-    order: 2;
+@media (min-width: 900px) {
+    .productSection {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        margin-bottom: 4rem;
+    }
+}
+
+/* Alternate layout logic - disabled on mobile, enabled on desktop */
+@media (min-width: 900px) {
+    .productSection:nth-of-type(even) .productInfo {
+        order: 2;
+    }
 }
 
 .productInfo h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .productInfo h2 {
+        font-size: 2rem;
+    }
 }
 
 .specHighlight {
@@ -43,41 +73,54 @@
 }
 
 .featureList li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
 }
 
 .productImagePlaceholder {
-    height: 300px;
+    height: 250px;
+    width: 100%;
     position: relative;
-    border-radius: 8px;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .productImagePlaceholder {
-        height: 250px;
-        /* Slightly smaller on mobile to fit screen better */
+        height: 350px;
     }
 }
 
 .divider {
     border: 0;
     border-top: 1px solid #eee;
-    margin: 4rem 0;
+    margin: 3rem 0;
+}
+
+@media (min-width: 768px) {
+    .divider {
+        margin: 4rem 0;
+    }
 }
 
 .specsGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
     margin-bottom: 2rem;
 }
 
+@media (min-width: 640px) {
+    .specsGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 .specCard {
     background: var(--neutral-light);
-    padding: 1rem;
-    border-radius: 4px;
+    padding: 1.25rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-color);
 }
 
 .specCard h4 {
@@ -89,12 +132,13 @@
     background: white;
     border: 1px solid #eee;
     padding: 1.5rem;
-    border-radius: 8px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .logos {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     margin-top: 1rem;
     flex-wrap: wrap;
     align-items: center;
@@ -103,9 +147,9 @@
 .badge {
     background: var(--primary-color);
     color: white;
-    padding: 5px 10px;
+    padding: 5px 12px;
     border-radius: 4px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: bold;
 }
 
@@ -113,40 +157,24 @@
     background: var(--neutral-dark);
     color: white;
     text-align: center;
-    padding: 3rem;
-    border-radius: 8px;
+    padding: 3rem 1.5rem;
+    border-radius: 12px;
     margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .ctaBox {
+        padding: 4rem;
+    }
 }
 
 .ctaBox h3 {
     color: white;
+    margin-bottom: 1rem;
 }
 
 .ctaBox p {
     margin-bottom: 2rem;
     color: var(--neutral-light);
-}
-
-@media (max-width: 768px) {
-    .productSection {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-        margin-bottom: 3rem;
-    }
-
-    .productSection:nth-of-type(even) .productInfo {
-        order: 0;
-    }
-
-    .specsGrid {
-        grid-template-columns: 1fr;
-    }
-
-    .title {
-        font-size: 2rem;
-    }
-
-    .ctaBox {
-        padding: 2rem 1.5rem;
-    }
+    font-size: 1.1rem;
 }

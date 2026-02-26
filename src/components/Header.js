@@ -10,13 +10,23 @@ const Header = () => {
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
+        if (!isMenuOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+    };
+
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+        document.body.style.overflow = 'unset';
     };
 
     return (
         <header className={styles.header}>
             <div className={`container ${styles.container}`}>
                 <div className={styles.logoContainer}>
-                    <Link href="/" className={styles.mainLogo}>
+                    <Link href="/" className={styles.mainLogo} onClick={closeMenu}>
                         <Image
                             src="/images/jsv_logo_header.svg"
                             alt="JSV Enterprises Logo"
@@ -39,6 +49,32 @@ const Header = () => {
                     </div>
                 </div>
 
+                <div className={`${styles.overlay} ${isMenuOpen ? styles.overlayActive : ''}`} onClick={closeMenu}></div>
+
+                <nav className={`${styles.nav} ${isMenuOpen ? styles.navActive : ''}`}>
+                    <ul className={styles.navList}>
+                        <li className={styles.navItem} onClick={closeMenu}>
+                            <Link href="/">Home</Link>
+                        </li>
+                        <li className={styles.navItem} onClick={closeMenu}>
+                            <Link href="/about">About Us</Link>
+                        </li>
+                        <li className={styles.navItem} onClick={closeMenu}>
+                            <Link href="/products">Products</Link>
+                        </li>
+                        <li className={styles.navItem} onClick={closeMenu}>
+                            <Link href="/facility">Facility</Link>
+                        </li>
+
+                        <li className={styles.navItem} onClick={closeMenu}>
+                            <Link href="/careers">Careers</Link>
+                        </li>
+                        <li className={styles.navItem} onClick={closeMenu}>
+                            <Link href="/contact">Contact</Link>
+                        </li>
+                    </ul>
+                </nav>
+
                 <button
                     className={`${styles.hamburger} ${isMenuOpen ? styles.active : ''}`}
                     onClick={toggleMenu}
@@ -48,30 +84,6 @@ const Header = () => {
                     <span className={`${styles.bar} ${isMenuOpen ? styles.barTwo : ''}`}></span>
                     <span className={`${styles.bar} ${isMenuOpen ? styles.barThree : ''}`}></span>
                 </button>
-
-                <nav className={`${styles.nav} ${isMenuOpen ? styles.navActive : ''}`}>
-                    <ul className={styles.navList}>
-                        <li className={styles.navItem} onClick={() => setIsMenuOpen(false)}>
-                            <Link href="/">Home</Link>
-                        </li>
-                        <li className={styles.navItem} onClick={() => setIsMenuOpen(false)}>
-                            <Link href="/about">About Us</Link>
-                        </li>
-                        <li className={styles.navItem} onClick={() => setIsMenuOpen(false)}>
-                            <Link href="/products">Products</Link>
-                        </li>
-                        <li className={styles.navItem} onClick={() => setIsMenuOpen(false)}>
-                            <Link href="/facility">Facility</Link>
-                        </li>
-
-                        <li className={styles.navItem} onClick={() => setIsMenuOpen(false)}>
-                            <Link href="/careers">Careers</Link>
-                        </li>
-                        <li className={styles.navItem} onClick={() => setIsMenuOpen(false)}>
-                            <Link href="/contact">Contact</Link>
-                        </li>
-                    </ul>
-                </nav>
                 <div className={styles.cta}>
                     <Link href="/contact" className="btn">
                         Get a Quote
