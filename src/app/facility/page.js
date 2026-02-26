@@ -1,10 +1,18 @@
 import Image from 'next/image';
 import styles from './page.module.css';
+import ImageSlider from '../../components/ImageSlider';
 
 export const metadata = {
     title: 'Manufacturing Facility | JSV Enterprises',
     description: 'State-of-the-art steel manufacturing facility in Jharkhand with 12-stand automatic rolling mill.',
 };
+
+const facilityImages = [
+    '/images/Billet-Manufacturing-CCM.jpg',
+    '/images/continuous_casting_new.png',
+    '/images/quality_testing_new.png',
+    '/images/rolling_mill_new.png'
+];
 
 export default function Facility() {
     return (
@@ -13,6 +21,10 @@ export default function Facility() {
             <p className={styles.intro}>
                 Equipped with cutting-edge technology and fully automatic machinery, our plant in Barhi is a testament to modern engineering and efficiency.
             </p>
+
+            <section className={styles.gallerySlider}>
+                <ImageSlider images={facilityImages} interval={5000} />
+            </section>
 
             <section className={styles.featureSection}>
                 <div className={styles.featureText}>

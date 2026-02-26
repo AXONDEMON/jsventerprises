@@ -1,4 +1,5 @@
 import PageHeader from '../../components/PageHeader';
+import ImageSlider from '../../components/ImageSlider';
 import styles from './page.module.css';
 
 export const metadata = {
@@ -57,10 +58,29 @@ export default function Quality() {
 
                 <div className={styles.labSection}>
                     <h2>In-House Testing Laboratory</h2>
-                    <p>
-                        Our facility is equipped with a modern laboratory for real-time testing of chemical and mechanical properties.
-                        <strong> Spectrometer analysis</strong> and <strong>Tensile testing</strong> machines allow us to certify every batch before dispatch.
-                    </p>
+                    <div className={styles.labContent}>
+                        <div className={styles.labText}>
+                            <p>
+                                Our facility is equipped with a modern laboratory for real-time testing of chemical and mechanical properties.
+                                <strong> Spectrometer analysis</strong> and <strong>Tensile testing</strong> machines allow us to certify every batch before dispatch.
+                            </p>
+                            <ul>
+                                <li>Spectro Labs (Physics & Chemistry)</li>
+                                <li>Universal Testing Machine (UTM)</li>
+                                <li>Hardness Testing</li>
+                                <li>Bending & Re-bending tests</li>
+                            </ul>
+                        </div>
+                        <div className={styles.labSlider}>
+                            <ImageSlider
+                                images={[
+                                    '/images/quality_testing_new.png',
+                                    '/images/melting_refining_new.png',
+                                    '/images/partners_hero.jpg'
+                                ]}
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>

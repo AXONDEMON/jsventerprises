@@ -415,83 +415,9 @@
     max-width: 800px;
 }
 
-.sliderWrapper {
-    height: 100vh;
-    height: 100dvh;
-}
-
-@media (min-width: 769px) {
-    .sliderWrapper {
-        display: block !important;
-        overflow: visible !important;
-        height: auto !important;
-    }
-}
-
-.pagination {
-    display: none;
-    position: fixed;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 100;
-    gap: 0.75rem;
-}
-
 @media (max-width: 768px) {
-    .pagination {
-        display: flex;
-    }
-}
-
-.dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.3);
-    border: 2px solid white;
-    padding: 0;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.dotActive {
-    background: var(--accent-color);
-    transform: scale(1.3);
-    border-color: var(--accent-color);
-}
-
-/* Adjust sections for mobile full-screen slides */
-@media (max-width: 768px) {
-
-    .mainSection,
-    .processSection,
-    .parallaxSection,
-    .gallerySection,
-    .ctaSection,
-    .partnersSection {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 5rem 1rem 3rem !important;
-        /* Extra padding for header and pagination */
-        min-height: 100vh;
-        min-height: 100dvh;
-        overflow-y: auto;
-    }
-
-    .processGrid {
+    .introLayout {
         grid-template-columns: 1fr;
-        gap: 1rem;
-        margin-bottom: 2rem;
-    }
-
-    .processCard {
-        padding: 1.25rem;
-    }
-
-    .processImageContainer {
-        height: 140px;
     }
 }
 
