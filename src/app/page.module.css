@@ -5,6 +5,26 @@
     margin-bottom: 2.5rem;
 }
 
+.sliderSection {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    .sliderSection {
+        padding: 4rem 1.5rem;
+        height: auto;
+        min-height: 100vh;
+        display: block;
+    }
+}
+
 @media (min-width: 900px) {
     .introLayout {
         flex-direction: row;
@@ -205,6 +225,23 @@
     .galleryGrid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .galleryOverlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(transparent, rgba(13, 27, 42, 0.9));
+        color: white;
+        padding: 1.5rem;
+        font-weight: 700;
+        transform: translateY(100%);
+        transition: transform 0.4s ease;
+    }
+
+    .galleryItem:hover .galleryOverlay {
+        transform: translateY(0);
+    }
 }
 
 @media (min-width: 900px) {
@@ -373,23 +410,58 @@
 }
 
 .parallaxSection {
-    background-image: url('/images/infrastructure_bg.jpg');
+    position: relative;
+    height: 100vh;
+    background-image: url('/images/about_hero.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 6rem 0;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
-    position: relative;
-    margin: 4rem 0;
+}
+
+.parallaxOverlay {
+    background: rgba(13, 27, 42, 0.85);
+    padding: 3rem;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 800px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.infraList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.infraList p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    opacity: 0.9;
+    border-left: 3px solid var(--accent-color);
+    padding-left: 1rem;
+    text-align: left;
 }
 
 @media (max-width: 768px) {
+    .infraList {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
     .parallaxSection {
         padding: 3rem 1rem;
         background-attachment: scroll;
-        margin: 2rem 0;
+        height: auto;
+        /* Allow height to adjust on mobile */
+        min-height: 100vh;
+        /* Ensure it's still full height if content is short */
     }
 
     .parallaxOverlay {
