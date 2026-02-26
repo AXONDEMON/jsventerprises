@@ -17,18 +17,29 @@ const ContentCarousel = ({ children }) => {
         setCurrentIndex((prev) => (prev - 1 + count) % count);
     };
 
+    const handleDragEnd = (event, info) => {
+        if (info.offset.x < -50) {
+            next();
+        } else if (info.offset.x > 50) {
+            prev();
+        }
+    };
+
     if (count <= 1) return <div className={styles.singleItem}>{children}</div>;
 
     return (
         <div className={styles.carouselContainer}>
             <div className={styles.slideWrapper}>
-                <AnimatePresence mode="wait">
+                <AnimatePresence mode="popLayout" initial={false}>
                     <motion.div
                         key={currentIndex}
-                        initial={{ opacity: 0, x: 50 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        exit={{ opacity: 0, x: -50 }}
-                        transition={{ duration: 0.3 }}
+                        initial={{ opacity: 0, scale: 0.95, x: 100 }}
+                        animate={{ opacity: 1, scale: 1, x: 0 }}
+                        exit={{ opacity: 0, scale: 0.95, x: -100 }}
+                        transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                        drag="x"
+                        dragConstraints={{ left: 0, right: 0 }}
+                        onDragEnd={handleDragEnd}
                         className={styles.slide}
                     >
                         {children[currentIndex]}

@@ -2,45 +2,29 @@
   /* Industrial Color Palette */
   --primary-color: #0d1b2a;
   /* Deep Blue */
-  --secondary-color: #415a77;
-  /* Steel Blue */
-  --accent-color: #ff6b35;
-  /* Safety Orange */
-  --neutral-light: #e0e1dd;
-  /* Off-white */
-  --neutral-dark: #1b263b;
-  /* Dark Blue */
-  --text-color: #333333;
-  --bg-color: #ffffff;
-
-  /* Typography - Mobile First */
-  --h1-size: 1.75rem;
-  /* 28px */
-  --h2-size: 1.375rem;
-  /* 22px */
   --secondary-color: #1b263b;
-  --accent-color: #e0ac1c;
+  /* Dark Steel Blue */
+  --accent-color: #ff6b35;
+  /* Optimized Brand Orange */
   --neutral-light: #f8f9fa;
+  /* Clean Light Gray */
   --text-dark: #1a1a1a;
   --text-muted: #6c757d;
 
   --font-inter: var(--font-inter), sans-serif;
   --font-heading: var(--font-space-grotesk), sans-serif;
 
-  --container-max: 1200px;
-  --header-height: 80px;
-  --topbar-height: 44px;
+  --container-max: 1240px;
+  --header-height: 70px;
   --body-size: 16px;
   --heading-scale: 1.25;
 }
 
 @media (min-width: 768px) {
   :root {
-    --h1-size: 3rem;
-    --h2-size: 2.25rem;
-    --h3-size: 1.5rem;
-    --spacing-lg: 4rem;
-    --spacing-xl: 8rem;
+    --h1-size: 3.5rem;
+    --h2-size: 2.5rem;
+    --h3-size: 1.75rem;
   }
 }
 
