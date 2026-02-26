@@ -3,6 +3,7 @@ import './globals.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import TopBar from '../components/TopBar';
+import ClientLayoutWrapper from '../components/ClientLayoutWrapper';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -12,7 +13,7 @@ const montserrat = Montserrat({
 
 const openSans = Open_Sans({
   subsets: ['latin'],
-  variable: '--font-opensans',
+  variable: '--font-open-sans',
   display: 'swap',
 });
 
@@ -29,11 +30,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${openSans.variable}`}>
+    <html lang="en">
       <body>
         <TopBar />
         <Header />
-        {children}
+        <ClientLayoutWrapper montserratClass={montserrat.variable} openSansClass={openSans.variable}>
+          {children}
+        </ClientLayoutWrapper>
         <Footer />
       </body>
     </html>
