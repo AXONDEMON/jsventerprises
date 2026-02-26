@@ -2,9 +2,9 @@
 
 import { usePathname } from 'next/navigation';
 
-export default function ClientLayoutWrapper({ children, montserratClass, openSansClass }) {
+export default function ClientLayoutWrapper({ children, interClass, spaceGroteskClass }) {
     return (
-        <div className={`${montserratClass} ${openSansClass}`}>
+        <div className={`${interClass} ${spaceGroteskClass}`}>
             {children}
         </div>
     );

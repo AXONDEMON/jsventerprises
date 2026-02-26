@@ -1,11 +1,87 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Hero from '../components/Hero';
+import ContentCarousel from '../components/ContentCarousel';
+import ImageSlider from '../components/ImageSlider';
 import styles from './page.module.css';
 
 export default function Home() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  const processCards = [
+    <div key="1" className={styles.processCard}>
+      <div className={styles.processImageContainer}>
+        <Image src="/images/raw_material_new.png" alt="Raw Material" fill style={{ objectFit: 'cover' }} />
+      </div>
+      <h3>Raw Material</h3>
+      <p>Rigorous selection of premium Sponge Iron and calibrated scrap.</p>
+    </div>,
+    <div key="2" className={styles.processCard}>
+      <div className={styles.processImageContainer}>
+        <Image src="/images/melting_refining_new.png" alt="Melting" fill style={{ objectFit: 'cover' }} />
+      </div>
+      <h3>Melting & Refining</h3>
+      <p>Advanced Induction Furnace with real-time chemistry monitoring.</p>
+    </div>,
+    <div key="3" className={styles.processCard}>
+      <div className={styles.processImageContainer}>
+        <Image src="/images/continuous_casting_new.png" alt="Casting" fill style={{ objectFit: 'cover' }} />
+      </div>
+      <h3>Continuous Casting</h3>
+      <p>Modern CCM technology for consistent, defect-free steel billets.</p>
+    </div>,
+    <div key="4" className={styles.processCard}>
+      <div className={styles.processImageContainer}>
+        <Image src="/images/rolling_mill_new.png" alt="Rolling" fill style={{ objectFit: 'cover' }} />
+      </div>
+      <h3>Precision Rolling</h3>
+      <p>Fully automated 12-stand mill for perfect structural dimensions.</p>
+    </div>,
+    <div key="5" className={styles.processCard}>
+      <div className={styles.processImageContainer}>
+        <Image src="/images/quality_testing_new.png" alt="Quality Check" fill style={{ objectFit: 'cover' }} />
+      </div>
+      <h3>Rigorous Testing</h3>
+      <p>In-house Spectro Labs ensuring compliance with IS standards.</p>
+    </div>
+  ];
+
+  const productCards = [
+    <div key="1" className={styles.productCard}>
+      <div className={styles.cardImage}>
+        <Image src="/images/rolling_mill_new.png" alt="Steel Rolling" fill style={{ objectFit: 'cover' }} />
+      </div>
+      <h3>Steel Billets</h3>
+      <p>High-quality billets for rolling mills. 400 TPD production capacity ensuring consistent supply.</p>
+      <Link href="/products" className={styles.textLink}>Learn More &rarr;</Link>
+    </div>,
+    <div key="2" className={styles.productCard}>
+      <div className={styles.cardImage}>
+        <Image src="/images/steel_stack.jpg" alt="Structural Steel" fill style={{ objectFit: 'cover' }} />
+      </div>
+      <h3>Structural Steel</h3>
+      <p>Angles, Channels, and Square Bars (25mm-75mm). Manufactured using our 12-stand automatic mill.</p>
+      <Link href="/products" className={styles.textLink}>Learn More &rarr;</Link>
+    </div>
+  ];
+
+  const galleryImages = [
+    '/images/Billet-Manufacturing-CCM.jpg',
+    '/images/quality_testing_new.png',
+    '/images/continuous_casting_new.png',
+    '/images/partners_hero.jpg'
+  ];
+
   return (
     <main>
       {/* Section 1: Hero */}
@@ -52,43 +128,13 @@ export default function Home() {
       <section id="process" className={`${styles.processSection} section`}>
         <div className="container">
           <h2 className={styles.sectionTitleWhite}>Engineered for Quality</h2>
-          <div className={styles.processGrid}>
-            <div className={styles.processCard}>
-              <div className={styles.processImageContainer}>
-                <Image src="/images/raw_material_new.png" alt="Raw Material" fill style={{ objectFit: 'cover' }} />
-              </div>
-              <h3>Raw Material</h3>
-              <p>Rigorous selection of premium Sponge Iron and calibrated scrap.</p>
+          {isMobile ? (
+            <ContentCarousel>{processCards}</ContentCarousel>
+          ) : (
+            <div className={styles.processGrid}>
+              {processCards}
             </div>
-            <div className={styles.processCard}>
-              <div className={styles.processImageContainer}>
-                <Image src="/images/melting_refining_new.png" alt="Melting" fill style={{ objectFit: 'cover' }} />
-              </div>
-              <h3>Melting & Refining</h3>
-              <p>Advanced Induction Furnace with real-time chemistry monitoring.</p>
-            </div>
-            <div className={styles.processCard}>
-              <div className={styles.processImageContainer}>
-                <Image src="/images/continuous_casting_new.png" alt="Casting" fill style={{ objectFit: 'cover' }} />
-              </div>
-              <h3>Continuous Casting</h3>
-              <p>Modern CCM technology for consistent, defect-free steel billets.</p>
-            </div>
-            <div className={styles.processCard}>
-              <div className={styles.processImageContainer}>
-                <Image src="/images/rolling_mill_new.png" alt="Rolling" fill style={{ objectFit: 'cover' }} />
-              </div>
-              <h3>Precision Rolling</h3>
-              <p>Fully automated 12-stand mill for perfect structural dimensions.</p>
-            </div>
-            <div className={styles.processCard}>
-              <div className={styles.processImageContainer}>
-                <Image src="/images/quality_testing_new.png" alt="Quality Check" fill style={{ objectFit: 'cover' }} />
-              </div>
-              <h3>Rigorous Testing</h3>
-              <p>In-house Spectro Labs ensuring compliance with IS standards.</p>
-            </div>
-          </div>
+          )}
         </div>
       </section>
 
@@ -141,54 +187,32 @@ export default function Home() {
       {/* Section 6: Products */}
       <section id="products" className="section container">
         <h2 style={{ textAlign: 'center', marginBottom: '3rem' }}>Our Products</h2>
-        <div className={styles.productsGrid}>
-          <div className={styles.productCard}>
-            <div className={styles.cardImage}>
-              <Image
-                src="/images/rolling_mill_new.png"
-                alt="Steel Rolling"
-                fill
-                style={{ objectFit: 'cover' }}
-              />
-            </div>
-            <h3>Steel Billets</h3>
-            <p>High-quality billets for rolling mills. 400 TPD production capacity ensuring consistent supply.</p>
-            <Link href="/products" className={styles.textLink}>Learn More &rarr;</Link>
+        {isMobile ? (
+          <ContentCarousel>{productCards}</ContentCarousel>
+        ) : (
+          <div className={styles.productsGrid}>
+            {productCards}
           </div>
-          <div className={styles.productCard}>
-            <div className={styles.cardImage}>
-              <Image
-                src="/images/steel_stack.jpg"
-                alt="Structural Steel"
-                fill
-                style={{ objectFit: 'cover' }}
-              />
-            </div>
-            <h3>Structural Steel</h3>
-            <p>Angles, Channels, and Square Bars (25mm-75mm). Manufactured using our 12-stand automatic mill.</p>
-            <Link href="/products" className={styles.textLink}>Learn More &rarr;</Link>
-          </div>
-        </div>
+        )}
       </section>
 
       {/* Section 7: Gallery */}
       <section id="gallery" className={styles.gallerySection}>
         <div className="container">
           <h2>Industrial Excellence</h2>
-          <div className={styles.galleryGrid}>
-            <div className={styles.galleryItem}>
-              <Image src="/images/Billet-Manufacturing-CCM.jpg" alt="Rolling Mill" fill style={{ objectFit: 'cover' }} />
+          {isMobile ? (
+            <div className={styles.mobileGallerySlider}>
+              <ImageSlider images={galleryImages} />
             </div>
-            <div className={styles.galleryItem}>
-              <Image src="/images/quality_testing_new.png" alt="Quality Testing" fill style={{ objectFit: 'cover' }} />
+          ) : (
+            <div className={styles.galleryGrid}>
+              {galleryImages.map((src, i) => (
+                <div key={i} className={styles.galleryItem}>
+                  <Image src={src} alt="Gallery" fill style={{ objectFit: 'cover' }} />
+                </div>
+              ))}
             </div>
-            <div className={styles.galleryItem}>
-              <Image src="/images/continuous_casting_new.png" alt="Continuous Casting" fill style={{ objectFit: 'cover' }} />
-            </div>
-            <div className={styles.galleryItem}>
-              <Image src="/images/partners_hero.jpg" alt="Production Quality" fill style={{ objectFit: 'cover' }} />
-            </div>
-          </div>
+          )}
         </div>
       </section>
 

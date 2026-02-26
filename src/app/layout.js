@@ -1,19 +1,19 @@
-import { Montserrat, Open_Sans } from 'next/font/google';
+import { Inter, Space_Grotesk } from 'next/font/google';
 import './globals.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import TopBar from '../components/TopBar';
 import ClientLayoutWrapper from '../components/ClientLayoutWrapper';
 
-const montserrat = Montserrat({
+const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-montserrat',
+  variable: '--font-inter',
   display: 'swap',
 });
 
-const openSans = Open_Sans({
+const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
-  variable: '--font-open-sans',
+  variable: '--font-space-grotesk',
   display: 'swap',
 });
 
@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
       <body>
         <TopBar />
         <Header />
-        <ClientLayoutWrapper montserratClass={montserrat.variable} openSansClass={openSans.variable}>
+        <ClientLayoutWrapper interClass={inter.variable} spaceGroteskClass={spaceGrotesk.variable}>
           {children}
         </ClientLayoutWrapper>
         <Footer />
