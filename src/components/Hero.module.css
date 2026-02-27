@@ -23,6 +23,8 @@
         flex-direction: column !important;
         justify-content: flex-start !important;
         padding-bottom: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
         background-color: #ffffff;
     }
 
