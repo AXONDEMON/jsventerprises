@@ -43,9 +43,8 @@
 @media (max-width: 899px) {
     .sliderBg {
         position: relative !important;
-        height: auto !important;
-        aspect-ratio: 1536 / 630 !important;
-        min-height: unset !important;
+        height: 50vh !important;
+        min-height: 350px !important;
         width: 100% !important;
     }
 }
@@ -64,9 +63,8 @@
 
 @media (max-width: 899px) {
     .bgImage {
-        background-size: contain !important;
+        background-size: cover !important;
         background-position: center top !important;
-        background-repeat: no-repeat !important;
     }
 }
 
@@ -143,10 +141,10 @@
         bottom: 30px;
         left: 50%;
         transform: translateX(-50%);
-        width: 90%;
-        max-width: 340px;
-        flex-direction: row !important;
-        justify-content: center;
+        width: 100%;
+        max-width: 280px;
+        flex-direction: column !important;
+        align-items: center;
         gap: 12px;
         z-index: 5;
     }
