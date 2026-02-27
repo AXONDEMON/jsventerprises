@@ -28,10 +28,10 @@ const Header = () => {
                 <div className={styles.logoContainer}>
                     <Link href="/" className={styles.mainLogo} onClick={closeMenu}>
                         <Image
-                            src="images/JSV Enterprises-2.png"
+                            src="/images/image copy 3.png"
                             alt="JSV Enterprises Logo"
-                            width={120}
-                            height={36}
+                            width={150}
+                            height={45}
                             priority
                             className={styles.logoImage}
                         />
