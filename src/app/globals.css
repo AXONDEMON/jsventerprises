@@ -151,7 +151,8 @@ img {
   margin-bottom: 2.5rem;
   font-weight: 800;
   color: var(--primary-color);
-  font-size: var(--h2-size);
+  font-size: 1.85rem;
+  /* Increased for mobile prominence */
 }
 
 @media (min-width: 900px) {

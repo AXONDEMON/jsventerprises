@@ -66,8 +66,8 @@
 
 @media (max-width: 899px) {
     .bgImage {
-        background-size: cover !important;
-        /* Zoom in to fill space */
+        background-size: 115% auto !important;
+        /* Slight zoom out while maintaining cover */
         background-position: center top !important;
     }
 }
