@@ -429,7 +429,12 @@
 
     .gallerySection,
     .ctaSection {
-        padding: 3rem 1rem;
+        padding: 3rem 1.5rem;
+    }
+
+    .ctaSection .btn {
+        padding: 8px 24px;
+        font-size: 0.85rem;
     }
 }
 
