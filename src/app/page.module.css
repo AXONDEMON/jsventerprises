@@ -433,8 +433,9 @@
     }
 
     .ctaSection .btn {
-        padding: 8px 24px;
-        font-size: 0.85rem;
+        padding: 6px 18px;
+        font-size: 0.8rem;
+        min-height: 40px;
     }
 }
 
