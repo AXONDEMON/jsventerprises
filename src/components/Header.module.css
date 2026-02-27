@@ -35,18 +35,18 @@
 .mainLogo {
     display: flex;
     align-items: center;
-    height: 54px;
-    /* Increased for more zoom */
+    height: 60px;
+    /* Maximized for brand impact */
     background-color: white;
-    padding: 4px 12px;
-    border-radius: 6px;
+    padding: 4px 15px;
+    border-radius: 8px;
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
 }
 
 .mainLogo img {
-    height: 44px !important;
-    /* Increased for more zoom */
+    height: 50px !important;
+    /* Maximized for brand impact */
     width: auto !important;
 }
 
@@ -173,23 +173,23 @@
         display: flex !important;
         position: fixed;
         top: 0;
-        right: -60%;
-        /* Hide based on new width */
+        right: -80%;
+        /* Moved further out to completely hide shadow leak */
         width: 60%;
-        /* Only half-ish screen width */
         height: 100vh;
         background-color: #0d1b2a;
         padding: 2rem;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.4);
         transition: right 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         z-index: 1001;
     }
 
     .navActive {
         right: 0;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.4);
+        /* Shadow only when active */
     }
 
     .overlay {
@@ -242,14 +242,14 @@
     }
 
     .mainLogo {
-        height: 44px;
-        /* Zoomed on mobile */
-        padding: 3px 10px;
+        height: 50px;
+        /* Maximized on mobile */
+        padding: 4px 10px;
     }
 
     .mainLogo img {
-        height: 36px !important;
-        /* Zoomed on mobile */
+        height: 42px !important;
+        /* Maximized on mobile */
         width: auto !important;
     }
 

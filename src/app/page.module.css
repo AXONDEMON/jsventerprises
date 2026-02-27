@@ -435,11 +435,11 @@
     .ctaSection .btn {
         width: 75% !important;
         max-width: 300px !important;
-        height: 40px !important;
-        /* Reduced from 44px */
-        padding: 0 16px !important;
-        font-size: 0.8rem !important;
-        /* Slightly smaller */
+        height: 36px !important;
+        /* Reduced to 36px for extra-small feel */
+        padding: 0 12px !important;
+        font-size: 0.75rem !important;
+        /* Very refined small look */
         font-weight: 700 !important;
         margin: 20px auto !important;
         display: flex !important;
