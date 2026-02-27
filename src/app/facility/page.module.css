@@ -58,12 +58,18 @@
 }
 
 .featureImage {
-    height: 250px;
+    height: 300px;
+    /* Increased for better mobile presence */
     width: 100%;
     position: relative;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Ensure no distortion */
+.featureImage img {
+    object-fit: cover !important;
 }
 
 @media (min-width: 768px) {

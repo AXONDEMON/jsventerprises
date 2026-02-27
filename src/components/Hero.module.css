@@ -47,8 +47,8 @@
 
 @media (max-width: 899px) {
     .bgImage {
-        background-size: 100% 100%;
-        /* Show full image width */
+        background-size: cover;
+        /* Zoomed in natural scaling */
         background-position: center;
     }
 }
