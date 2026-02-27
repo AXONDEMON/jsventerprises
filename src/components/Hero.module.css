@@ -18,12 +18,11 @@
 @media (max-width: 899px) {
     .hero {
         height: auto !important;
-        min-height: 55vh !important;
-        /* Reserved space to prevent overlap */
+        min-height: unset !important;
         display: flex !important;
         flex-direction: column !important;
         justify-content: flex-start !important;
-        padding-bottom: 3rem !important;
+        padding-bottom: 0 !important;
         background-color: #ffffff;
     }
 
