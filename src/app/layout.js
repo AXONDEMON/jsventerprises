@@ -3,6 +3,7 @@ import './globals.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import TopBar from '../components/TopBar';
+import MobileFooterCTA from '../components/MobileFooterCTA';
 import ClientLayoutWrapper from '../components/ClientLayoutWrapper';
 
 const inter = Inter({
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
           {children}
         </ClientLayoutWrapper>
         <Footer />
+        <MobileFooterCTA />
       </body>
     </html>
   );
