@@ -244,8 +244,9 @@
     }
 
     .mainLogo img {
-        height: 30px !important;
+        height: 34px !important;
         width: auto !important;
+        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4)) brightness(1.1);
     }
 
     .bar {
