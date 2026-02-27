@@ -17,8 +17,9 @@
 
 @media (max-width: 899px) {
     .hero {
+        aspect-ratio: 16 / 12;
+        /* Zoomed out taller ratio for mobile */
         padding-left: 0;
-        /* Remove left padding for centering on mobile */
         padding-bottom: 1.5rem;
     }
 }
@@ -46,8 +47,8 @@
 
 @media (max-width: 899px) {
     .bgImage {
-        background-size: cover;
-        /* Ensuring banner fits nicely */
+        background-size: 100% 100%;
+        /* Show full image width */
         background-position: center;
     }
 }
@@ -132,10 +133,6 @@
         max-width: none;
         margin: 0;
     }
-}
-
-.heroBtn {
-    /* Inherits from global btn, adding localized overrides if needed later */
 }
 
 @media (max-width: 899px) {

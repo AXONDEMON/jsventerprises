@@ -61,11 +61,6 @@ const Header = () => {
                         <li className={styles.navItem} onClick={closeMenu}>
                             <Link href="/contact">Contact</Link>
                         </li>
-                        <li className={styles.mobileOnlyNavItem} onClick={closeMenu}>
-                            <Link href="/contact" className="btn">
-                                Get a Quote
-                            </Link>
-                        </li>
                     </ul>
                 </nav>
 
