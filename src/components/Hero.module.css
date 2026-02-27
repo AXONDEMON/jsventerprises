@@ -138,9 +138,13 @@
 
 @media (max-width: 899px) {
     .ctaGroup {
-        margin: 0 auto;
-        /* Center on mobile */
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
         max-width: 280px;
+        z-index: 5;
     }
 }
 
