@@ -66,7 +66,8 @@
 
 @media (max-width: 899px) {
     .bgImage {
-        background-size: cover !important;
+        background-size: 125% auto !important;
+        /* Slight zoom out as requested */
         background-position: center top !important;
     }
 }
@@ -140,18 +141,8 @@
 
 @media (max-width: 899px) {
     .ctaGroup {
-        position: relative !important;
-        /* Changed from absolute to prevent overlap */
-        bottom: unset !important;
-        left: unset !important;
-        transform: unset !important;
-        width: 100%;
-        max-width: 280px;
-        flex-direction: column !important;
-        align-items: center;
-        gap: 12px;
-        z-index: 5;
-        margin: 2rem auto 0 auto !important;
+        display: none !important;
+        /* Buttons removed on mobile as requested */
     }
 }
 
