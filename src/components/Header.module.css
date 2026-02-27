@@ -163,17 +163,15 @@
         display: flex !important;
         position: fixed;
         top: 0;
-        right: -100%;
+        right: -120%;
+        /* Moved further out to hide shadow/border leak */
         width: 100%;
-        /* Full width for centering */
         height: 100vh;
         background-color: #0d1b2a;
         padding: 2rem;
         flex-direction: column;
         align-items: center;
-        /* Center horizontally */
         justify-content: center;
-        /* Center vertically in middle */
         box-shadow: -10px 0 30px rgba(0, 0, 0, 0.4);
         transition: right 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         z-index: 1001;

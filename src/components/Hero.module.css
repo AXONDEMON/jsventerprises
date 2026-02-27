@@ -1,8 +1,10 @@
 .hero {
+    width: 100%;
     height: auto;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 1536 / 630;
+    /* Exact ratio of image copy.png */
     /* Standard wide aspect ratio */
-    min-height: 400px;
+    min-height: 350px;
     position: relative;
     display: flex;
     align-items: flex-end;
