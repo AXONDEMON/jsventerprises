@@ -35,14 +35,25 @@
 .mainLogo {
     display: flex;
     align-items: center;
-    height: 38px;
-    overflow: hidden;
+    height: 44px;
+    /* Slightly taller */
+    background-color: white;
+    /* Clean white background */
+    padding: 6px 12px;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
 }
 
 .mainLogo img {
-    height: 38px !important;
+    height: 32px !important;
+    /* Image height inside padded container */
     width: auto !important;
-    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
+}
+
+.mainLogo:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
 }
 
 .divider {
@@ -227,8 +238,8 @@
     }
 
     .mobileOnlyNavItem .btn {
-        padding: 10px 30px;
-        font-size: 0.9rem;
+        padding: 6px 18px;
+        font-size: 0.8rem;
     }
 
     .logoContainer {
@@ -240,13 +251,13 @@
     }
 
     .mainLogo {
-        height: 30px;
+        height: 38px;
+        padding: 4px 10px;
     }
 
     .mainLogo img {
-        height: 34px !important;
+        height: 28px !important;
         width: auto !important;
-        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4)) brightness(1.1);
     }
 
     .bar {
