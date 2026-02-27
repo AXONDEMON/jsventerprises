@@ -173,10 +173,10 @@
         display: flex !important;
         position: fixed;
         top: 0;
-        right: -100vw;
-        /* Use vw for guaranteed full-width hide */
-        width: 100vw;
-        /* Full screen width */
+        right: -60%;
+        /* Hide based on new width */
+        width: 60%;
+        /* Only half-ish screen width */
         height: 100vh;
         background-color: #0d1b2a;
         padding: 2rem;
