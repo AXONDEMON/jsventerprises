@@ -59,7 +59,7 @@ export default function Home() {
   const productCards = [
     <div key="1" className={styles.productCard}>
       <div className={styles.cardImage}>
-        <Image src="/images/rolling_mill_new.png" alt="Steel Rolling" fill style={{ objectFit: 'cover' }} />
+        <Image src="/images/steel_billets_premium.png" alt="Steel Billets" fill style={{ objectFit: 'cover' }} />
       </div>
       <h3>Steel Billets</h3>
       <p>High-quality billets for rolling mills. 400 TPD production capacity ensuring consistent supply.</p>
@@ -67,7 +67,7 @@ export default function Home() {
     </div>,
     <div key="2" className={styles.productCard}>
       <div className={styles.cardImage}>
-        <Image src="/images/steel_stack.jpg" alt="Structural Steel" fill style={{ objectFit: 'cover' }} />
+        <Image src="/images/steel_angle_channels_premium.png" alt="Structural Steel" fill style={{ objectFit: 'cover' }} />
       </div>
       <h3>Structural Steel</h3>
       <p>Angles, Channels, and Square Bars (25mm-75mm). Manufactured using our 12-stand automatic mill.</p>
