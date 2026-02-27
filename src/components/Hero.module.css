@@ -43,7 +43,8 @@
 @media (max-width: 899px) {
     .sliderBg {
         position: relative !important;
-        height: 50vh !important;
+        height: 65vh !important;
+        /* Increased for better visual presence */
     }
 }
 

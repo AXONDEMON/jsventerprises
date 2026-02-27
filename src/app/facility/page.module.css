@@ -33,6 +33,14 @@
     margin-bottom: 3.5rem;
 }
 
+@media (max-width: 768px) {
+    .featureSection {
+        display: flex !important;
+        flex-direction: column !important;
+        /* Forced stack for mobile */
+    }
+}
+
 @media (min-width: 900px) {
     .featureSection {
         display: grid;
@@ -220,6 +228,13 @@
 
     .galleryGridDesktop {
         display: none;
+    }
+}
+
+@media (min-width: 900px) {
+    .galleryGridDesktop {
+        grid-template_columns: repeat(4, 1fr) !important;
+        gap: 2rem;
     }
 }
 

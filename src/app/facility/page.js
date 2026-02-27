@@ -51,7 +51,7 @@ export default function Facility() {
             </section>
 
             {/* New Furnace Section */}
-            <section className={styles.featureSection} style={{ flexDirection: 'row-reverse' }}>
+            <section className={styles.featureSection}>
                 <div className={styles.featureText}>
                     <h2>Induction Furnace Facility</h2>
                     <p>

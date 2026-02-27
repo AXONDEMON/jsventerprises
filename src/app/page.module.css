@@ -435,17 +435,18 @@
     .ctaSection .btn {
         width: 75% !important;
         max-width: 300px !important;
-        height: 36px !important;
-        /* Reduced to 36px for extra-small feel */
-        padding: 0 12px !important;
-        font-size: 0.75rem !important;
-        /* Very refined small look */
+        height: 32px !important;
+        /* Refined smaller feel */
+        padding: 0 10px !important;
+        font-size: 0.7rem !important;
+        /* Extra small professional tip */
         font-weight: 700 !important;
-        margin: 20px auto !important;
+        margin: 15px auto !important;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
         min-height: unset !important;
+        border-radius: 4px !important;
     }
 }
 
