@@ -232,23 +232,26 @@
         width: 100%;
     }
 
-    .mobileOnlyNavItem {
-        display: block;
-        margin-top: 2rem;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+    @media (max-width: 768px) {
+        .mobileOnlyNavItem {
+            display: flex !important;
+            justify-content: center !important;
+            width: 100% !important;
+            margin: 20px 0 !important;
+        }
 
-    .mobileOnlyNavItem .btn {
-        width: 75%;
-        height: 44px;
-        padding: 0 16px;
-        font-size: 0.85rem;
-        font-weight: 700;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        .mobileOnlyNavItem .btn {
+            width: 75% !important;
+            height: 44px !important;
+            padding: 12px 20px !important;
+            font-size: 0.85rem !important;
+            font-weight: 700 !important;
+            margin: 0 auto !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            min-height: unset !important;
+        }
     }
 
     .logoContainer {
