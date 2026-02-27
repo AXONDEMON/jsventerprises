@@ -35,19 +35,19 @@
 .mainLogo {
     display: flex;
     align-items: center;
-    height: 44px;
-    /* Slightly taller */
+    height: 48px;
+    /* Slightly taller container for 'zoom' effect */
     background-color: white;
-    /* Clean white background */
-    padding: 6px 12px;
+    padding: 4px 10px;
+    /* Reduced vertical padding to allow more image height */
     border-radius: 6px;
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
 }
 
 .mainLogo img {
-    height: 32px !important;
-    /* Image height inside padded container */
+    height: 38px !important;
+    /* Increased from 32px for 'zoom' effect */
     width: auto !important;
 }
 
@@ -263,12 +263,14 @@
     }
 
     .mainLogo {
-        height: 38px;
-        padding: 4px 10px;
+        height: 40px;
+        /* Zoomed on mobile */
+        padding: 3px 8px;
     }
 
     .mainLogo img {
-        height: 28px !important;
+        height: 32px !important;
+        /* Zoomed on mobile */
         width: auto !important;
     }
 

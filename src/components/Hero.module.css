@@ -134,6 +134,21 @@
     }
 }
 
+.heroBtn {
+    /* Inherits from global btn, adding localized overrides if needed later */
+}
+
+@media (max-width: 899px) {
+    .heroBtn {
+        padding: 8px 20px !important;
+        /* Smaller than global btn */
+        font-size: 0.85rem !important;
+        min-height: 42px !important;
+        width: auto !important;
+        /* Don't force full width if not needed */
+    }
+}
+
 .outlineBtn {
     display: inline-flex;
     align-items: center;

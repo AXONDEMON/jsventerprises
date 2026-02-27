@@ -24,7 +24,7 @@ const Hero = () => {
                         transition={{ duration: 0.8 }}
                     >
                         <div className={styles.ctaGroup}>
-                            <Link href="/contact" className="btn">
+                            <Link href="/contact" className={`btn ${styles.heroBtn}`}>
                                 Get a Quote
                             </Link>
                             <Link href="/products" className={styles.outlineBtn}>
