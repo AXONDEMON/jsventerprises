@@ -76,9 +76,9 @@ export default function Home() {
   ];
 
   const galleryImages = [
-    '/images/Billet-Manufacturing-CCM.jpg',
-    '/images/quality_testing_new.png',
     '/images/continuous_casting_new.png',
+    '/images/quality_testing_new.png',
+    '/images/melting_refining_new.png',
     '/images/partners_hero.jpg'
   ];
 
@@ -114,7 +114,7 @@ export default function Home() {
           </div>
           <div className={styles.introImage}>
             <Image
-              src="/images/factory_sparks.jpg"
+              src="/images/furnace_melting_premium.png"
               alt="Steel Manufacturing Process"
               width={600}
               height={450}

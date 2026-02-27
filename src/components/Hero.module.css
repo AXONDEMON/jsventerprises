@@ -62,8 +62,8 @@
 
 @media (max-width: 899px) {
     .bgImage {
-        background-size: 110% auto !important;
-        /* Slightly zoomed but shows more width */
+        background-size: 140% auto !important;
+        /* Increased zoom as requested */
         background-position: center top !important;
         /* Show more sky/detail */
     }

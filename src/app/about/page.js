@@ -9,7 +9,7 @@ export const metadata = {
 export default function About() {
     return (
         <main>
-            <PageHeader title="About JSV Enterprises" bgImage="/images/about_hero.jpg" />
+            <PageHeader title="About JSV Enterprises" bgImage="/images/hero_bg_industrial.jpg" />
             <div className="container section">
                 {/* <h1 className={styles.title}>About JSV Enterprises</h1> - Removed */}
 

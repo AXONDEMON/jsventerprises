@@ -8,8 +8,10 @@ export const metadata = {
 };
 
 const facilityImages = [
-    '/images/Billet-Manufacturing-CCM.jpg',
     '/images/continuous_casting_new.png',
+    '/images/furnace_melting_premium.png',
+    '/images/rolling_mill_premium.png',
+    '/images/spectro_lab_premium.png',
     '/images/quality_testing_new.png',
     '/images/rolling_mill_new.png'
 ];
@@ -128,16 +130,16 @@ export default function Facility() {
                 </div>
                 <div className={styles.galleryGridDesktop}>
                     <div className={styles.galleryItem}>
-                        <Image src="/images/Billet-Manufacturing-CCM.jpg" alt="Billet CCM" fill style={{ objectFit: 'cover' }} />
-                    </div>
-                    <div className={styles.galleryItem}>
                         <Image src="/images/continuous_casting_new.png" alt="Continuous Casting" fill style={{ objectFit: 'cover' }} />
                     </div>
                     <div className={styles.galleryItem}>
-                        <Image src="/images/quality_testing_new.png" alt="Quality Testing" fill style={{ objectFit: 'cover' }} />
+                        <Image src="/images/furnace_melting_premium.png" alt="Induction Furnace" fill style={{ objectFit: 'cover' }} />
                     </div>
                     <div className={styles.galleryItem}>
-                        <Image src="/images/rolling_mill_new.png" alt="Rolling Mill" fill style={{ objectFit: 'cover' }} />
+                        <Image src="/images/rolling_mill_premium.png" alt="Rolling Mill" fill style={{ objectFit: 'cover' }} />
+                    </div>
+                    <div className={styles.galleryItem}>
+                        <Image src="/images/spectro_lab_premium.png" alt="Spectro Lab" fill style={{ objectFit: 'cover' }} />
                     </div>
                 </div>
             </section>

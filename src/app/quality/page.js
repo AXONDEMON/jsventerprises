@@ -10,7 +10,7 @@ export const metadata = {
 export default function Quality() {
     return (
         <main>
-            <PageHeader title="Quality Assurance" bgImage="/images/quality_hero.jpg" />
+            <PageHeader title="Quality Assurance" bgImage="/images/spectro_lab_premium.png" />
             <div className="container section">
                 {/* <h1 className={styles.title}>Quality Assurance</h1> - Removed */}
                 <p className={`${styles.intro} mobile-center`}>
@@ -75,8 +75,8 @@ export default function Quality() {
                             <ImageSlider
                                 images={[
                                     '/images/quality_testing_new.png',
-                                    '/images/melting_refining_new.png',
-                                    '/images/partners_hero.jpg'
+                                    '/images/spectro_lab_premium.png',
+                                    '/images/scrap_management_premium.png'
                                 ]}
                             />
                         </div>

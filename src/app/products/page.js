@@ -11,7 +11,7 @@ export const metadata = {
 export default function Products() {
     return (
         <main>
-            <PageHeader title="Our Products" bgImage="/images/products_hero.jpg" />
+            <PageHeader title="Our Products" bgImage="/images/hero_banner_industrial.png" />
             <div className="container section">
                 {/* <h1 className={styles.title}>Our Products</h1> - Removed */}
                 <p className={styles.intro}>

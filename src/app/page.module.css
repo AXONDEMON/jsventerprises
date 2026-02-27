@@ -172,6 +172,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -280,7 +281,7 @@
 
 /* Production Process Styles */
 .processSection {
-    background-image: url('/images/process_bg.jpg');
+    background-image: url('/images/modern_steel_infra_bg.png');
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
