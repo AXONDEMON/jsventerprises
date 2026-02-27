@@ -9,17 +9,20 @@ const Footer = () => {
                 <div className={styles.column}>
                     <h3>JSV Enterprises</h3>
                     <p>Manufacturing Strength at Scale.</p>
-                    <div className={styles.socials}>
-                        <a
-                            href="https://www.linkedin.com/company/jsventerprises/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={styles.socialLink}
-                            aria-label="LinkedIn"
-                        >
-                            <Linkedin size={20} />
-                            <span>LinkedIn</span>
-                        </a>
+                    <div className={styles.socialSection}>
+                        <p className={styles.followUs}>Follow Us</p>
+                        <div className={styles.socials}>
+                            <a
+                                href="https://www.linkedin.com/company/jsventerprises/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.socialLink}
+                                aria-label="LinkedIn"
+                            >
+                                <Linkedin size={20} fill="currentColor" />
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
