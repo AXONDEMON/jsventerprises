@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { Linkedin } from 'lucide-react';
 import styles from './Footer.module.css';
 
 const Footer = () => {
@@ -19,7 +18,6 @@ const Footer = () => {
                                 className={styles.socialLink}
                                 aria-label="LinkedIn"
                             >
-                                <Linkedin size={20} fill="currentColor" />
                                 <span>LinkedIn</span>
                             </a>
                         </div>
