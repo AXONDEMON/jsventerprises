@@ -156,8 +156,10 @@
     .heroBtn {
         width: 100% !important;
         max-width: 320px !important;
-        height: 48px !important;
+        height: 44px !important;
+        /* Slightly smaller for mobile refinement */
         margin: 0 auto !important;
+        font-size: 0.9rem !important;
     }
 }
 

@@ -38,8 +38,8 @@ export default function Products() {
                     </div>
                     <div className={styles.productImagePlaceholder}>
                         <Image
-                            src="/images/continuous_casting_new.png"
-                            alt="Steel Billets Production - CCM"
+                            src="/images/steel_billets_premium.png"
+                            alt="Premium Steel Billets Manufacturing"
                             fill
                             style={{ objectFit: 'cover' }}
                         />
@@ -95,8 +95,8 @@ export default function Products() {
                     </div>
                     <div className={styles.productImagePlaceholder}>
                         <Image
-                            src="/images/rolling_mill_new.png"
-                            alt="Structural Steel Production"
+                            src="/images/steel_angle_channels_premium.png"
+                            alt="Premium Structural Steel - Angles and Channels"
                             fill
                             style={{ objectFit: 'cover' }}
                         />
