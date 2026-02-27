@@ -233,13 +233,15 @@
 
 @media (min-width: 900px) {
     .galleryGridDesktop {
-        grid-template_columns: repeat(4, 1fr) !important;
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
         gap: 2rem;
     }
 }
 
 .galleryGridDesktop {
-    display: grid;
+    display: none;
+    /* Hidden by default on mobile, shown on desktop */
     grid-template-columns: 1fr;
     gap: 1.5rem;
     margin-top: 2rem;
