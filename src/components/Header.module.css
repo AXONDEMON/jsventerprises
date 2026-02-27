@@ -1,5 +1,7 @@
 .header {
-    background-image: linear-gradient(rgba(13, 27, 42, 0.85), rgba(13, 27, 42, 0.85)), url('/images/header_banner_official.png');
+    background-color: #0d1b2a;
+    /* Solid industrial dark */
+    background-image: linear-gradient(rgba(13, 27, 42, 1), rgba(13, 27, 42, 1)), url('/images/header_banner_official.png');
     background-size: cover;
     background-position: center;
     color: white;
@@ -7,7 +9,7 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     min-height: var(--header-height);
     display: flex;
     align-items: center;
