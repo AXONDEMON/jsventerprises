@@ -18,9 +18,12 @@
 @media (max-width: 899px) {
     .hero {
         height: auto !important;
-        min-height: unset !important;
-        display: block !important;
-        padding-bottom: 0 !important;
+        min-height: 55vh !important;
+        /* Reserved space to prevent overlap */
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        padding-bottom: 3rem !important;
         background-color: #ffffff;
     }
 
@@ -137,16 +140,18 @@
 
 @media (max-width: 899px) {
     .ctaGroup {
-        position: absolute;
-        bottom: 30px;
-        left: 50%;
-        transform: translateX(-50%);
+        position: relative !important;
+        /* Changed from absolute to prevent overlap */
+        bottom: unset !important;
+        left: unset !important;
+        transform: unset !important;
         width: 100%;
         max-width: 280px;
         flex-direction: column !important;
         align-items: center;
         gap: 12px;
         z-index: 5;
+        margin: 2rem auto 0 auto !important;
     }
 }
 
