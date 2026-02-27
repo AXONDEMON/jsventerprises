@@ -1,11 +1,14 @@
 .hero {
     height: 85vh;
-    min-height: 600px;
+    min-height: 500px;
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    /* Push content to bottom */
     color: white;
     overflow: hidden;
+    padding-bottom: 3rem;
+    /* Spacing for buttons at bottom */
 }
 
 .sliderBg {
@@ -25,12 +28,14 @@
     height: 100%;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 @media (min-width: 900px) {
     .hero {
-        height: 90vh;
-        min-height: 750px;
+        height: 80vh;
+        min-height: 600px;
+        padding-bottom: 5rem;
     }
 }
 
@@ -40,13 +45,13 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(90deg, rgba(13, 27, 42, 0.9) 0%, rgba(13, 27, 42, 0.6) 40%, rgba(13, 27, 42, 0) 100%);
+    background: linear-gradient(0deg, rgba(13, 27, 42, 0.7) 0%, rgba(13, 27, 42, 0) 50%);
     z-index: 1;
 }
 
 @media (max-width: 899px) {
     .overlay {
-        background: linear-gradient(rgba(13, 27, 42, 0.8), rgba(13, 27, 42, 0.8));
+        background: linear-gradient(0deg, rgba(13, 27, 42, 0.8) 0%, rgba(13, 27, 42, 0.2) 60%, rgba(13, 27, 42, 0) 100%);
     }
 }
 
@@ -63,83 +68,8 @@
 
 @media (min-width: 900px) {
     .content {
-        max-width: 700px;
+        max-width: none;
         text-align: left;
-    }
-}
-
-.title {
-    margin-bottom: 0.5rem;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    font-family: var(--font-inter);
-}
-
-.titleTop {
-    font-size: 1.25rem;
-    font-weight: 400;
-    letter-spacing: 0.4em;
-    color: var(--accent-color);
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-}
-
-.titleMain {
-    font-size: 3.5rem;
-    font-weight: 900;
-    letter-spacing: 0.15em;
-    line-height: 1;
-    text-shadow: 2px 4px 15px rgba(0, 0, 0, 0.4);
-}
-
-@media (min-width: 768px) {
-    .titleTop {
-        font-size: 1.5rem;
-    }
-
-    .titleMain {
-        font-size: 5.5rem;
-    }
-}
-
-@media (min-width: 1200px) {
-    .titleMain {
-        font-size: 6.5rem;
-    }
-}
-
-.subtitle {
-    margin-bottom: 3.5rem;
-    display: flex;
-    flex-direction: column;
-    font-family: var(--font-inter);
-}
-
-.subtitleTop {
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: 0.5em;
-    opacity: 0.9;
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-}
-
-.subtitleMain {
-    font-size: 2.2rem;
-    font-weight: 800;
-    letter-spacing: 0.2em;
-    line-height: 1;
-    color: #f0f0f0;
-}
-
-@media (min-width: 768px) {
-    .subtitleTop {
-        font-size: 1.25rem;
-    }
-
-    .subtitleMain {
-        font-size: 3.5rem;
     }
 }
 
@@ -173,6 +103,8 @@
     min-height: 52px;
     border-radius: 4px;
     letter-spacing: 1.5px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
 }
 
 .outlineBtn:hover {
