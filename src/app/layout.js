@@ -11,12 +11,6 @@ const inter = Inter({
   display: 'swap',
 });
 
-const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
-  variable: '--font-space-grotesk',
-  display: 'swap',
-});
-
 export const metadata = {
   title: 'JSV Enterprises | Premium Steel Manufacturing in Jharkhand',
   description: 'Producers of 400 TPD Steel Billets and Structural Steel. Partners with APL APOLLO and SG Mart. Located in Barhi, Jharkhand.',
@@ -31,10 +25,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className={inter.variable}>
         <TopBar />
         <Header />
-        <ClientLayoutWrapper interClass={inter.variable} spaceGroteskClass={spaceGrotesk.variable}>
+        <ClientLayoutWrapper interClass={inter.variable}>
           {children}
         </ClientLayoutWrapper>
         <Footer />

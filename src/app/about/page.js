@@ -15,28 +15,28 @@ export default function About() {
 
                 <div className={styles.grid}>
                     <div className={styles.content}>
-                        <p className={styles.intro}>
+                        <p className={`${styles.intro} mobile-center`}>
                             JSV Enterprises is a premier steel manufacturing company located in the industrial hub of Barhi, Jharkhand.
                             With a steadfast commitment to quality and innovation, we have established ourselves as a reliable name in the steel industry.
                         </p>
-                        <p>
+                        <p className="mobile-center">
                             Our state-of-the-art facility boasts a <strong>400 TPD capacity</strong> for both Steel Billets and Structural Steel products.
                             Equipped with a fully automatic 12-stand rolling mill, we ensure precision and excellence in every ton of steel we produce.
                         </p>
 
                         <div className={styles.missionVision}>
-                            <div className={styles.mvCard}>
+                            <div className={`${styles.mvCard} mobile-center`}>
                                 <h3>Our Vision</h3>
                                 <p>To be the most trusted steel manufacturer in the region, known for quality, integrity, and sustainable growth.</p>
                             </div>
-                            <div className={styles.mvCard}>
+                            <div className={`${styles.mvCard} mobile-center`}>
                                 <h3>Our Mission</h3>
                                 <p>To deliver superior steel products that build the infrastructure of tomorrow, while maintaining the highest standards of safety and operational efficiency.</p>
                             </div>
                         </div>
 
-                        <h2 className={styles.subtitle}>Leadership</h2>
-                        <p>Our growth is driven by the vision of our dynamic partners:</p>
+                        <h2 className={`${styles.subtitle} mobile-center`}>Leadership</h2>
+                        <p className="mobile-center">Our growth is driven by the vision of our dynamic partners:</p>
                         <ul className={styles.leadershipList}>
                             <li>Neeraj Aggarwal</li>
                             <li>Rajeev Kumar Agarwal</li>
@@ -45,8 +45,8 @@ export default function About() {
                             <li>Vishesh Agarwal</li>
                         </ul>
 
-                        <h2 className={styles.subtitle}>Strategic Location</h2>
-                        <p>
+                        <h2 className={`${styles.subtitle} mobile-center`}>Strategic Location</h2>
+                        <p className="mobile-center">
                             Located in Village Konra, Barhi Industrial Area, Hazaribagh, Jharkhand, our plant is strategically positioned for efficient logistics and distribution across the region.
                         </p>
                     </div>

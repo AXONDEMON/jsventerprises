@@ -12,7 +12,7 @@
   --text-muted: #6c757d;
 
   --font-inter: var(--font-inter), sans-serif;
-  --font-heading: var(--font-space-grotesk), sans-serif;
+  --font-heading: var(--font-inter), sans-serif;
 
   --container-max: 1240px;
   --header-height: 70px;
@@ -45,13 +45,21 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+h1,
+h2,
+h3,
+h4,
 h5,
 h6 {
-  font-family: var(--font-montserrat), sans-serif;
-  color: var(--primary-color);
-  margin-bottom: var(--spacing-sm);
+  font-family: var(--font-inter);
   font-weight: 700;
   line-height: 1.2;
+}
+
+h5,
+h6 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
 }
 
 h1 {
@@ -88,7 +96,6 @@ img {
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 1rem;
-  /* 16px */
 }
 
 @media (min-width: 768px) {
@@ -135,4 +142,29 @@ img {
 
 .section {
   padding: var(--spacing-lg) 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  font-size: var(--h2-size);
+}
+
+@media (min-width: 900px) {
+  .section-title {
+    text-align: left;
+    margin-bottom: 3.5rem;
+  }
+}
+
+.mobile-center {
+  text-align: center !important;
+}
+
+@media (min-width: 768px) {
+  .mobile-center-desktop-left {
+    text-align: left !important;
+  }
 }

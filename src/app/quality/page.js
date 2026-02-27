@@ -13,7 +13,7 @@ export default function Quality() {
             <PageHeader title="Quality Assurance" bgImage="/images/quality_hero.jpg" />
             <div className="container section">
                 {/* <h1 className={styles.title}>Quality Assurance</h1> - Removed */}
-                <p className={styles.intro}>
+                <p className={`${styles.intro} mobile-center`}>
                     At JSV Enterprises, quality is not just a standard; it is our philosophy.
                     We adhere to stringent quality control measures at every stage of production to ensure our steel meets the highest industry benchmarks.
                 </p>
@@ -57,7 +57,7 @@ export default function Quality() {
                 </div>
 
                 <div className={styles.labSection}>
-                    <h2>In-House Testing Laboratory</h2>
+                    <h2 className="section-title">In-House Testing Laboratory</h2>
                     <div className={styles.labContent}>
                         <div className={styles.labText}>
                             <p>

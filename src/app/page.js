@@ -186,7 +186,7 @@ export default function Home() {
 
       {/* Section 6: Products */}
       <section id="products" className="section container">
-        <h2 style={{ textAlign: 'center', marginBottom: '3rem' }}>Our Products</h2>
+        <h2 className="section-title" style={{ textAlign: isMobile ? 'center' : 'center' }}>Our Products</h2>
         {isMobile ? (
           <ContentCarousel>{productCards}</ContentCarousel>
         ) : (
@@ -199,7 +199,7 @@ export default function Home() {
       {/* Section 7: Gallery */}
       <section id="gallery" className={styles.gallerySection}>
         <div className="container">
-          <h2>Industrial Excellence</h2>
+          <h2 className="section-title">Industrial Excellence</h2>
           {isMobile ? (
             <div className={styles.mobileGallerySlider}>
               <ImageSlider images={galleryImages} />

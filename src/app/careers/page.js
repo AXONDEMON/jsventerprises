@@ -14,8 +14,8 @@ export default function Careers() {
                 {/* <h1 className={styles.title}>Careers at JSV Enterprises</h1> - Removed */}
 
                 <div className={styles.content}>
-                    <div className={styles.info}>
-                        <h2>Join Our Team</h2>
+                    <div className={`${styles.info} mobile-center`}>
+                        <h2 className="section-title">Join Our Team</h2>
                         <p>
                             At JSV Enterprises, we believe that our strength lies in our people.
                             As a rapidly growing steel manufacturing company with a 400 TPD capacity and a state-of-the-art 12-stand automatic rolling mill,
@@ -27,7 +27,7 @@ export default function Careers() {
                             JSV Enterprises provides the platform you need to build a solid career in the steel industry.
                         </p>
 
-                        <h3>Current Openings</h3>
+                        <h3 className="mobile-center">Current Openings</h3>
                         <ul className={styles.jobList}>
                             <li>Mechanical Engineers (Plant)</li>
                             <li>Electrical Maintenance Staff</li>
@@ -36,7 +36,7 @@ export default function Careers() {
                             <li>Office Administration Staff</li>
                         </ul>
 
-                        <div className={styles.hrContact}>
+                        <div className={`${styles.hrContact} mobile-center`}>
                             <h3>HR Contact</h3>
                             <p><strong>Email:</strong> jsvent2018@gmail.com</p>
                             <p><strong>Phone:</strong> +91 94319 41464</p>

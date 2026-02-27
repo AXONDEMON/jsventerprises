@@ -73,7 +73,7 @@
     color: white;
     display: flex;
     flex-direction: column;
-    font-family: var(--font-montserrat), sans-serif;
+    font-family: var(--font-inter);
 }
 
 .titleTop {
@@ -113,7 +113,7 @@
     margin-bottom: 3.5rem;
     display: flex;
     flex-direction: column;
-    font-family: var(--font-montserrat), sans-serif;
+    font-family: var(--font-inter);
 }
 
 .subtitleTop {
