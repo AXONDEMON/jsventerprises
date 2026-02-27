@@ -17,10 +17,11 @@
 
 @media (max-width: 899px) {
     .hero {
-        aspect-ratio: 16 / 12;
-        /* Zoomed out taller ratio for mobile */
+        height: 85vh !important;
+        aspect-ratio: auto !important;
+        min-height: 350px !important;
         padding-left: 0;
-        padding-bottom: 1.5rem;
+        padding-bottom: 3rem !important;
     }
 }
 
