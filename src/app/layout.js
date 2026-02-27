@@ -18,7 +18,7 @@ export const metadata = {
     google: 'vTYlO3Zd9fBbT9Un8HRWJzorsOOjmfK3RNSE',
   },
   icons: {
-    icon: '/images/aplapollo_logo.ico',
+    icon: '/images/APLAPOLLO.NS-a86ad11d.ico',
   },
 };
 
