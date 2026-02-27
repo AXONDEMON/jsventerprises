@@ -35,18 +35,18 @@
 .mainLogo {
     display: flex;
     align-items: center;
-    height: 80px;
-    /* Max zoom for brand prominence */
+    height: 60px;
+    /* Reduced for better balance */
     background-color: white;
-    padding: 6px 20px;
+    padding: 6px 15px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
 }
 
 .mainLogo img {
-    height: 65px !important;
-    /* Max zoom for brand prominence */
+    height: 48px !important;
+    /* Reduced size as requested */
     width: auto !important;
 }
 
@@ -242,14 +242,14 @@
     }
 
     .mainLogo {
-        height: 65px;
-        /* Max zoom for brand prominence on mobile */
-        padding: 4px 15px;
+        height: 50px;
+        /* Reduced for mobile refinement */
+        padding: 4px 12px;
     }
 
     .mainLogo img {
-        height: 52px !important;
-        /* Max zoom for brand prominence on mobile */
+        height: 38px !important;
+        /* Reduced for mobile refinement */
         width: auto !important;
     }
 

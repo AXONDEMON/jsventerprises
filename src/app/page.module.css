@@ -184,7 +184,16 @@
 .cardImage {
     position: relative;
     height: 200px;
-    margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .cardImage {
+        margin: 0 0 1.5rem 0;
+        border-radius: 8px;
+        overflow: hidden;
+    }
 }
 
 @media (min-width: 768px) {

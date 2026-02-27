@@ -43,8 +43,8 @@
 @media (max-width: 899px) {
     .sliderBg {
         position: relative !important;
-        height: 65vh !important;
-        /* Increased for better visual presence */
+        height: 75vh !important;
+        /* Increased for better visual presence as requested */
     }
 }
 
@@ -62,10 +62,10 @@
 
 @media (max-width: 899px) {
     .bgImage {
-        background-size: 140% auto !important;
-        /* Increased zoom as requested */
-        background-position: center top !important;
-        /* Show more sky/detail */
+        background-size: 160% auto !important;
+        /* Further increased zoom as requested */
+        background-position: center 25% !important;
+        /* Focus on Bachchan and Banner */
     }
 }
 
@@ -160,11 +160,34 @@
     .heroBtn {
         width: 100% !important;
         max-width: 320px !important;
-        height: 44px !important;
-        /* Slightly smaller for mobile refinement */
+        height: 52px !important;
+        /* Increased height for better accessibility */
         margin: 0 auto !important;
-        font-size: 0.9rem !important;
+        font-size: 1rem !important;
     }
+}
+
+.orangeBtn {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    letter-spacing: 1.5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    box-shadow: 0 4px 15px rgba(243, 112, 33, 0.3);
+}
+
+.orangeBtn:hover {
+    background-color: #e2631a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(243, 112, 33, 0.4);
 }
 
 .outlineBtn {
