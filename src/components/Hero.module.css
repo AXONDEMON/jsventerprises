@@ -45,8 +45,9 @@
 @media (max-width: 899px) {
     .sliderBg {
         position: relative !important;
-        height: 50vh !important;
-        min-height: 350px !important;
+        height: auto !important;
+        aspect-ratio: 1536 / 630 !important;
+        min-height: unset !important;
         width: 100% !important;
     }
 }
@@ -65,8 +66,7 @@
 
 @media (max-width: 899px) {
     .bgImage {
-        background-size: 115% auto !important;
-        /* Slight zoom out while maintaining cover */
+        background-size: cover !important;
         background-position: center top !important;
     }
 }
