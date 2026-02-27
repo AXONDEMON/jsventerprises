@@ -123,7 +123,10 @@ export default function Facility() {
 
             <section className={styles.gallerySection}>
                 <h2>Infrastructure Gallery</h2>
-                <div className={styles.galleryGrid}>
+                <div className={styles.galleryCarouselMobile}>
+                    <ImageSlider images={facilityImages} interval={5000} />
+                </div>
+                <div className={styles.galleryGridDesktop}>
                     <div className={styles.galleryItem}>
                         <Image src="/images/Billet-Manufacturing-CCM.jpg" alt="Billet CCM" fill style={{ objectFit: 'cover' }} />
                     </div>
