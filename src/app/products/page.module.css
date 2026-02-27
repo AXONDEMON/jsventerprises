@@ -12,8 +12,8 @@
 .intro {
     text-align: center;
     max-width: 800px;
-    margin: 0 auto 3rem;
-    font-size: 1.1rem;
+    margin: 0 auto 2rem;
+    font-size: 1rem;
     color: #555;
     padding: 0 1rem;
 }
@@ -50,7 +50,7 @@
 }
 
 .productInfo h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
 

@@ -94,8 +94,8 @@
     color: white;
     padding: 2rem 1rem;
     border-radius: 12px;
-    margin-bottom: 3.5rem;
-    gap: 2rem;
+    margin-bottom: 2.5rem;
+    gap: 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -113,7 +113,7 @@
 }
 
 .statBox h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--accent-color);
     margin-bottom: 0.5rem;
 }

@@ -86,7 +86,7 @@
 }
 
 .statCard h3 {
-    font-size: 2.2rem;
+    font-size: 1.85rem;
     color: var(--primary-color);
     margin-bottom: 0.25rem;
     font-weight: 800;
@@ -328,8 +328,8 @@
     color: white;
     text-align: center;
     margin-bottom: 3rem;
-    font-size: 2.75rem;
-    /* Increased for mobile visibility */
+    font-size: 2rem;
+    /* Refined for mobile */
 }
 
 @media (min-width: 768px) {
@@ -441,7 +441,7 @@
 
     .gallerySection,
     .ctaSection {
-        padding: 3rem 1.5rem;
+        padding: 2.5rem 1.25rem;
     }
 
     .ctaSection .btn {

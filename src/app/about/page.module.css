@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column-reverse;
     /* Put highlights after content on mobile */
-    gap: 2.5rem;
+    gap: 1.5rem;
 }
 
 @media (min-width: 900px) {
@@ -26,8 +26,8 @@
 }
 
 .intro {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
     line-height: 1.6;
 }
 
