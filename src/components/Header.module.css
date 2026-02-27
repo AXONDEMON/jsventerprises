@@ -262,6 +262,16 @@
     }
 
     .cta {
-        display: none;
+        display: flex !important;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1.5rem;
+        order: 3;
+    }
+
+    .cta .btn {
+        width: auto;
+        padding: 10px 30px;
+        font-size: 0.9rem;
     }
 }

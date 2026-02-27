@@ -257,6 +257,9 @@
     color: white;
     text-align: center;
     padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -393,7 +396,7 @@
 }
 
 .parallaxSection {
-    background-image: url('/images/infrastructure_bg.jpg');
+    background-image: url('/images/modern_steel_infra_bg.png');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -403,6 +406,9 @@
     color: white;
     position: relative;
     margin: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 768px) {
