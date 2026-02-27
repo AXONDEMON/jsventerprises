@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Linkedin } from 'lucide-react';
 import styles from './Footer.module.css';
 
 const Footer = () => {
@@ -9,7 +10,16 @@ const Footer = () => {
                     <h3>JSV Enterprises</h3>
                     <p>Manufacturing Strength at Scale.</p>
                     <div className={styles.socials}>
-                        {/* Icons would go here */}
+                        <a
+                            href="https://www.linkedin.com/company/jsventerprises/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.socialLink}
+                            aria-label="LinkedIn"
+                        >
+                            <Linkedin size={20} />
+                            <span>LinkedIn</span>
+                        </a>
                     </div>
                 </div>
 
