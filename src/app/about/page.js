@@ -35,15 +35,7 @@ export default function About() {
                             </div>
                         </div>
 
-                        <h2 className={`${styles.subtitle} mobile-center`}>Leadership</h2>
-                        <p className="mobile-center">Our growth is driven by the vision of our dynamic partners:</p>
-                        <ul className={styles.leadershipList}>
-                            <li>Neeraj Aggarwal</li>
-                            <li>Rajeev Kumar Agarwal</li>
-                            <li>Sumit Bansal</li>
-                            <li>Dev Agarwal</li>
-                            <li>Vishesh Agarwal</li>
-                        </ul>
+                        <h2 className={`${styles.subtitle} mobile-center`}>Strategic Location</h2>
 
                         <h2 className={`${styles.subtitle} mobile-center`}>Strategic Location</h2>
                         <p className="mobile-center">

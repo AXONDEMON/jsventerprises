@@ -78,29 +78,6 @@
     }
 }
 
-.leadershipList {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-    gap: 1rem;
-    list-style: none;
-    padding: 0;
-}
-
-@media (min-width: 768px) {
-    .leadershipList {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-}
-
-.leadershipList li {
-    background: white;
-    padding: 1rem;
-    border: 1px solid #eee;
-    border-radius: 12px;
-    font-weight: 600;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
 
 .highlightBox {
     background: var(--neutral-dark);

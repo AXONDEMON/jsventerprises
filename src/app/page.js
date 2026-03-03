@@ -19,60 +19,99 @@ export default function Home() {
   }, []);
 
   const processCards = [
-    <div key="1" className={styles.processCard}>
+    <motion.div
+      key="1"
+      className={styles.processCard}
+      whileHover={{ y: -10 }}
+      transition={{ type: "spring", stiffness: 300 }}
+    >
       <div className={styles.processImageContainer}>
         <Image src="/images/raw_material_new.png" alt="Raw Material" fill style={{ objectFit: 'cover' }} />
       </div>
       <h3>Raw Material</h3>
       <p>Rigorous selection of premium Sponge Iron and calibrated scrap.</p>
-    </div>,
-    <div key="2" className={styles.processCard}>
+    </motion.div>,
+    <motion.div
+      key="2"
+      className={styles.processCard}
+      whileHover={{ y: -10 }}
+      transition={{ type: "spring", stiffness: 300 }}
+    >
       <div className={styles.processImageContainer}>
         <Image src="/images/melting_refining_new.png" alt="Melting" fill style={{ objectFit: 'cover' }} />
       </div>
       <h3>Melting & Refining</h3>
       <p>Advanced Induction Furnace with real-time chemistry monitoring.</p>
-    </div>,
-    <div key="3" className={styles.processCard}>
+    </motion.div>,
+    <motion.div
+      key="3"
+      className={styles.processCard}
+      whileHover={{ y: -10 }}
+      transition={{ type: "spring", stiffness: 300 }}
+    >
       <div className={styles.processImageContainer}>
         <Image src="/images/continuous_casting_new.png" alt="Casting" fill style={{ objectFit: 'cover' }} />
       </div>
       <h3>Continuous Casting</h3>
       <p>Modern CCM technology for consistent, defect-free steel billets.</p>
-    </div>,
-    <div key="4" className={styles.processCard}>
+    </motion.div>,
+    <motion.div
+      key="4"
+      className={styles.processCard}
+      whileHover={{ y: -10 }}
+      transition={{ type: "spring", stiffness: 300 }}
+    >
       <div className={styles.processImageContainer}>
         <Image src="/images/rolling_mill_new.png" alt="Rolling" fill style={{ objectFit: 'cover' }} />
       </div>
       <h3>Precision Rolling</h3>
       <p>Fully automated 12-stand mill for perfect structural dimensions.</p>
-    </div>,
-    <div key="5" className={styles.processCard}>
+    </motion.div>,
+    <motion.div
+      key="5"
+      className={styles.processCard}
+      whileHover={{ y: -10 }}
+      transition={{ type: "spring", stiffness: 300 }}
+    >
       <div className={styles.processImageContainer}>
         <Image src="/images/quality_testing_new.png" alt="Quality Check" fill style={{ objectFit: 'cover' }} />
       </div>
       <h3>Rigorous Testing</h3>
       <p>In-house Spectro Labs ensuring compliance with IS standards.</p>
-    </div>
+    </motion.div>
   ];
 
   const productCards = [
-    <div key="1" className={styles.productCard}>
+    <motion.div
+      key="1"
+      className={styles.productCard}
+      whileHover={{ scale: 1.02 }}
+      transition={{ type: "spring", stiffness: 300 }}
+    >
       <div className={styles.cardImage}>
         <Image src="/images/steel_billets_premium.png" alt="Steel Billets" fill style={{ objectFit: 'cover' }} />
       </div>
-      <h3>Steel Billets</h3>
-      <p>High-quality billets for rolling mills. 400 TPD production capacity ensuring consistent supply.</p>
-      <Link href="/products" className={styles.textLink}>Learn More &rarr;</Link>
-    </div>,
-    <div key="2" className={styles.productCard}>
+      <div className={styles.productInfo}>
+        <h3>Steel Billets</h3>
+        <p>High-quality billets for rolling mills. 400 TPD production capacity ensuring consistent supply.</p>
+        <Link href="/products" className={styles.textLink}>Learn More &rarr;</Link>
+      </div>
+    </motion.div>,
+    <motion.div
+      key="2"
+      className={styles.productCard}
+      whileHover={{ scale: 1.02 }}
+      transition={{ type: "spring", stiffness: 300 }}
+    >
       <div className={styles.cardImage}>
         <Image src="/images/steel_angle_channels_premium.png" alt="Structural Steel" fill style={{ objectFit: 'cover' }} />
       </div>
-      <h3>Structural Steel</h3>
-      <p>Angles, Channels, and Square Bars (25mm-75mm). Manufactured using our 12-stand automatic mill.</p>
-      <Link href="/products" className={styles.textLink}>Learn More &rarr;</Link>
-    </div>
+      <div className={styles.productInfo}>
+        <h3>Structural Steel</h3>
+        <p>Angles, Channels, and Square Bars (25mm-75mm). Manufactured using our 12-stand automatic mill.</p>
+        <Link href="/products" className={styles.textLink}>Learn More &rarr;</Link>
+      </div>
+    </motion.div>
   ];
 
   const galleryImages = [
