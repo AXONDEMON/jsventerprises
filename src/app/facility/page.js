@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import styles from './page.module.css';
 import ImageSlider from '../../components/ImageSlider';
@@ -28,7 +29,13 @@ export default function Facility() {
                 <ImageSlider images={facilityImages} interval={5000} />
             </section>
 
-            <section className={styles.featureSection}>
+            <motion.section
+                className={styles.featureSection}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+            >
                 <div className={styles.featureText}>
                     <h2>Tech Highlight: 12-Stand Automatic Rolling Mill</h2>
                     <p>
@@ -47,13 +54,19 @@ export default function Facility() {
                         src="/images/rolling_mill_new.png"
                         alt="12-Stand Automatic Rolling Mill"
                         fill
-                        style={{ objectFit: 'cover', borderRadius: '8px' }}
+                        style={{ objectFit: 'cover', borderRadius: '16px' }}
                     />
                 </div>
-            </section>
+            </motion.section>
 
             {/* New Furnace Section */}
-            <section className={styles.featureSection}>
+            <motion.section
+                className={styles.featureSection}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+            >
                 <div className={styles.featureText}>
                     <h2>Induction Furnace Facility</h2>
                     <p>
@@ -72,12 +85,18 @@ export default function Facility() {
                         src="/images/melting_refining_new.png"
                         alt="Induction Furnace"
                         fill
-                        style={{ objectFit: 'cover', borderRadius: '8px' }}
+                        style={{ objectFit: 'cover', borderRadius: '16px' }}
                     />
                 </div>
-            </section>
+            </motion.section>
 
-            <section className={styles.statsSection}>
+            <motion.section
+                className={styles.statsSection}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+            >
                 <div className={styles.statBox}>
                     <h3>400 TPD</h3>
                     <p>Daily Production Capacity</p>
@@ -90,36 +109,31 @@ export default function Facility() {
                     <h3>Automated</h3>
                     <p>Process Control</p>
                 </div>
-            </section>
+            </motion.section>
 
             <section className={styles.processSection}>
-                <h2>Production Process</h2>
+                <h2 className="section-title">Production Process</h2>
                 <div className={styles.timeline}>
-                    <div className={styles.step}>
-                        <div className={styles.stepNumber}>1</div>
-                        <h3>Raw Material Selection</h3>
-                        <p>Sourcing high-quality sponge iron and scrap.</p>
-                    </div>
-                    <div className={styles.step}>
-                        <div className={styles.stepNumber}>2</div>
-                        <h3>Melting & Refining</h3>
-                        <p>Induction furnace processing with precise temperature control.</p>
-                    </div>
-                    <div className={styles.step}>
-                        <div className={styles.stepNumber}>3</div>
-                        <h3>Continuous Casting</h3>
-                        <p>Formation of high-quality billets.</p>
-                    </div>
-                    <div className={styles.step}>
-                        <div className={styles.stepNumber}>4</div>
-                        <h3>Rolling</h3>
-                        <p>Shaping through our 12-stand automatic mill.</p>
-                    </div>
-                    <div className={styles.step}>
-                        <div className={styles.stepNumber}>5</div>
-                        <h3>Quality Testing</h3>
-                        <p>Rigorous testing for strength and defects.</p>
-                    </div>
+                    {[
+                        { num: 1, title: "Raw Material", desc: "Sourcing premium sponge iron." },
+                        { num: 2, title: "Melting", desc: "Induction furnace processing." },
+                        { num: 3, title: "Casting", desc: "High-quality billet formation." },
+                        { num: 4, title: "Rolling", desc: "12-stand automatic mill." },
+                        { num: 5, title: "Quality", desc: "Rigorous spectrometer testing." }
+                    ].map((step, idx) => (
+                        <motion.div
+                            key={idx}
+                            className={styles.step}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: idx * 0.1 }}
+                        >
+                            <div className={styles.stepNumber}>{step.num}</div>
+                            <h3>{step.title}</h3>
+                            <p>{step.desc}</p>
+                        </motion.div>
+                    ))}
                 </div>
             </section>
 

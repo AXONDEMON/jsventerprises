@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
 import PageHeader from '../../components/PageHeader';
@@ -20,7 +21,13 @@ export default function Products() {
                 </p>
 
                 {/* Steel Billets Section */}
-                <section className={styles.productSection}>
+                <motion.section
+                    className={styles.productSection}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                >
                     <div className={styles.productInfo}>
                         <h2>Steel Billets</h2>
                         <p className={styles.specHighlight}>Capacity: 400 TPD</p>
@@ -44,12 +51,18 @@ export default function Products() {
                             style={{ objectFit: 'cover' }}
                         />
                     </div>
-                </section>
+                </motion.section>
 
                 <hr className={styles.divider} />
 
                 {/* Structural Steel Section */}
-                <section className={styles.productSection}>
+                <motion.section
+                    className={styles.productSection}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, delay: 0.2 }}
+                >
                     <div className={styles.productInfo}>
                         <h2>Structural Steel</h2>
                         <p className={styles.specHighlight}>Capacity: 400 TPD</p>
@@ -60,14 +73,20 @@ export default function Products() {
 
                         <h3>Product Range</h3>
                         <div className={styles.specsGrid}>
-                            <div className={styles.specCard}>
+                            <motion.div
+                                className={styles.specCard}
+                                whileHover={{ scale: 1.05 }}
+                            >
                                 <h4>Angles & Channels</h4>
                                 <p>Precision rolled for heavy construction use.</p>
-                            </div>
-                            <div className={styles.specCard}>
+                            </motion.div>
+                            <motion.div
+                                className={styles.specCard}
+                                whileHover={{ scale: 1.05 }}
+                            >
                                 <h4>Square Bars</h4>
                                 <p><strong>Sizes:</strong> 25mm to 75mm</p>
-                            </div>
+                            </motion.div>
                         </div>
 
                         <div className={styles.partnershipNote}>
@@ -76,7 +95,7 @@ export default function Products() {
                                 <span className={styles.badge}>APL APOLLO</span>
                                 <span className={styles.badge}>SG Mart Limited</span>
                             </div>
-                            <div style={{ marginTop: '1rem' }}>
+                            <div style={{ marginTop: '1.5rem' }}>
                                 <Image
                                     src="/images/apl_apollo_amitabh_new.png"
                                     alt="APL Apollo - Amitabh Bachchan"
@@ -84,10 +103,11 @@ export default function Products() {
                                     height={250}
                                     style={{
                                         objectFit: 'cover',
-                                        borderRadius: '8px',
+                                        borderRadius: '12px',
                                         width: '100%',
                                         height: 'auto',
-                                        maxWidth: '500px'
+                                        maxWidth: '500px',
+                                        boxShadow: '0 10px 20px rgba(0,0,0,0.1)'
                                     }}
                                 />
                             </div>
@@ -101,7 +121,7 @@ export default function Products() {
                             style={{ objectFit: 'cover' }}
                         />
                     </div>
-                </section>
+                </motion.section>
 
                 <div className={styles.ctaBox}>
                     <h3>Need a Custom Quote?</h3>

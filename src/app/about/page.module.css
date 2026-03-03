@@ -66,10 +66,20 @@
 }
 
 .mvCard {
-    background: var(--neutral-light);
+    background: var(--glass-bg);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--glass-border);
     padding: 1.5rem;
-    border-radius: 8px;
-    border-left: 4px solid var(--primary-color);
+    border-radius: var(--card-radius);
+    border-left: 4px solid var(--accent-color);
+    box-shadow: var(--glass-shadow);
+    transition: all 0.3s ease;
+}
+
+.mvCard h3 {
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
 }
 
 @media (min-width: 768px) {
@@ -80,10 +90,12 @@
 
 
 .highlightBox {
-    background: var(--neutral-dark);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
-    padding: 1.5rem;
-    border-radius: 12px;
+    padding: 2rem;
+    border-radius: var(--card-radius);
+    box-shadow: 0 10px 30px rgba(13, 27, 42, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 @media (min-width: 900px) {
