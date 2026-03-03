@@ -1,19 +1,24 @@
 .header {
-    background-color: #0d1b2a;
-    /* Solid industrial dark */
-    background-image: linear-gradient(rgba(13, 27, 42, 1), rgba(13, 27, 42, 1)), url('/images/header_banner_official.png');
-    background-size: cover;
-    background-position: center;
+    background-color: rgba(13, 27, 42, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     color: white;
     padding: 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    min-height: var(--header-height);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    min-height: 70px;
     display: flex;
     align-items: center;
     transition: all 0.3s ease;
+}
+
+@media (max-width: 900px) {
+    .header {
+        min-height: 60px;
+    }
 }
 
 .container {
@@ -35,8 +40,7 @@
 .mainLogo {
     display: flex;
     align-items: center;
-    height: 60px;
-    /* Reduced for better balance */
+    height: 54px;
     background-color: white;
     padding: 6px 15px;
     border-radius: 8px;
@@ -45,8 +49,7 @@
 }
 
 .mainLogo img {
-    height: 48px !important;
-    /* Reduced size as requested */
+    height: 42px !important;
     width: auto !important;
 }
 
@@ -137,59 +140,40 @@
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
-    transform-origin: 1px;
 }
 
 .mobileCta {
     display: none;
 }
 
-/* Mobile Nav Overhaul - Slide from Right */
+/* Mobile Nav Overhaul */
 @media (max-width: 900px) {
-    .header {
-        padding: 0.2rem 0;
-        min-height: 55px;
-    }
-
     .container {
-        padding: 0 1rem;
-        justify-content: space-between;
+        padding: 0 1.5rem;
     }
 
     .hamburger {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 26px;
-        height: 16px;
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        padding: 0;
-        z-index: 1002;
+        width: 28px;
+        height: 18px;
     }
 
     .nav {
-        display: flex !important;
         position: fixed;
         top: 0;
-        right: -80%;
-        /* Moved further out to completely hide shadow leak */
-        width: 60%;
-        height: 100vh;
-        background-color: #0d1b2a;
-        padding: 2rem;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: right 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        z-index: 1001;
-    }
-
-    .navActive {
         right: 0;
-        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.4);
-        /* Shadow only when active */
+        width: 75%;
+        height: 100vh;
+        background-color: rgba(13, 27, 42, 0.98);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        padding: 6rem 2rem;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        z-index: 1001;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.3);
+        border-left: 1px solid rgba(255, 255, 255, 0.05);
     }
 
     .overlay {
@@ -198,81 +182,52 @@
         left: 0;
         width: 100%;
         height: 100vh;
-        background: rgba(0, 0, 0, 0.6);
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.4s ease;
-        z-index: 1000;
+        background: rgba(0, 0, 0, 0.4);
         backdrop-filter: blur(4px);
-    }
-
-    .overlayActive {
-        opacity: 1;
-        visibility: visible;
+        z-index: 1000;
     }
 
     .navList {
         flex-direction: column;
-        gap: 2rem;
-        text-align: center;
+        gap: 2.5rem;
+        text-align: left;
         width: 100%;
-        align-items: center;
-    }
-
-    .navItem {
-        width: auto;
-        border-bottom: none;
-        padding-bottom: 0;
+        align-items: flex-start;
     }
 
     .navItem a {
-        font-size: 1.5rem;
-        /* Larger links in center */
-        display: block;
-        width: 100%;
+        font-size: 1.25rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
     }
 
-
     .logoContainer {
-        padding: 0;
-        gap: 0;
-        flex: 1;
-        max-width: none;
         justify-content: flex-start;
     }
 
     .mainLogo {
-        height: 50px;
-        /* Reduced for mobile refinement */
-        padding: 4px 12px;
+        height: 48px;
+        padding: 4px 10px;
     }
 
     .mainLogo img {
-        height: 38px !important;
-        /* Reduced for mobile refinement */
-        width: auto !important;
+        height: 34px !important;
     }
 
     .bar {
-        width: 100%;
         height: 2px;
-        background-color: white;
-        border-radius: 4px;
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        position: relative;
     }
 
     .barOne {
-        transform: translateY(7px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
     }
 
     .barTwo {
         opacity: 0;
-        transform: scaleX(0);
     }
 
     .barThree {
-        transform: translateY(-7px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
     }
 
     .cta {

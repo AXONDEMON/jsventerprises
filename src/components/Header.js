@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { motion, AnimatePresence } from 'framer-motion';
 import styles from './Header.module.css';
 
 const Header = () => {
@@ -22,6 +23,43 @@ const Header = () => {
         document.body.style.overflow = 'unset';
     };
 
+    const navItems = [
+        { name: 'Home', href: '/' },
+        { name: 'About Us', href: '/about' },
+        { name: 'Products', href: '/products' },
+        { name: 'Facility', href: '/facility' },
+        { name: 'Careers', href: '/careers' },
+        { name: 'Contact', href: '/contact' },
+    ];
+
+    const menuVariants = {
+        closed: {
+            x: '100%',
+            transition: {
+                type: 'spring',
+                stiffness: 400,
+                damping: 40,
+                staggerChildren: 0.05,
+                staggerDirection: -1
+            }
+        },
+        open: {
+            x: 0,
+            transition: {
+                type: 'spring',
+                stiffness: 400,
+                damping: 40,
+                staggerChildren: 0.07,
+                delayChildren: 0.2
+            }
+        }
+    };
+
+    const itemVariants = {
+        closed: { opacity: 0, x: 50 },
+        open: { opacity: 1, x: 0 }
+    };
+
     return (
         <header className={styles.header}>
             <div className={`container ${styles.container}`}>
@@ -38,31 +76,37 @@ const Header = () => {
                     </Link>
                 </div>
 
-                <div className={`${styles.overlay} ${isMenuOpen ? styles.overlayActive : ''}`} onClick={closeMenu}></div>
+                <AnimatePresence>
+                    {isMenuOpen && (
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            className={styles.overlay}
+                            onClick={closeMenu}
+                        />
+                    )}
+                </AnimatePresence>
 
-                <nav className={`${styles.nav} ${isMenuOpen ? styles.navActive : ''}`}>
+                <motion.nav
+                    className={styles.nav}
+                    initial="closed"
+                    animate={isMenuOpen ? "open" : "closed"}
+                    variants={menuVariants}
+                >
                     <ul className={styles.navList}>
-                        <li className={styles.navItem} onClick={closeMenu}>
-                            <Link href="/">Home</Link>
-                        </li>
-                        <li className={styles.navItem} onClick={closeMenu}>
-                            <Link href="/about">About Us</Link>
-                        </li>
-                        <li className={styles.navItem} onClick={closeMenu}>
-                            <Link href="/products">Products</Link>
-                        </li>
-                        <li className={styles.navItem} onClick={closeMenu}>
-                            <Link href="/facility">Facility</Link>
-                        </li>
-
-                        <li className={styles.navItem} onClick={closeMenu}>
-                            <Link href="/careers">Careers</Link>
-                        </li>
-                        <li className={styles.navItem} onClick={closeMenu}>
-                            <Link href="/contact">Contact</Link>
-                        </li>
+                        {navItems.map((item) => (
+                            <motion.li
+                                key={item.name}
+                                className={styles.navItem}
+                                variants={itemVariants}
+                                onClick={closeMenu}
+                            >
+                                <Link href={item.href}>{item.name}</Link>
+                            </motion.li>
+                        ))}
                     </ul>
-                </nav>
+                </motion.nav>
 
                 <button
                     className={`${styles.hamburger} ${isMenuOpen ? styles.active : ''}`}
