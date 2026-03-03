@@ -1,11 +1,8 @@
+'use client';
+
 import { motion } from 'framer-motion';
 import PageHeader from '../../components/PageHeader';
 import styles from './page.module.css';
-
-export const metadata = {
-    title: 'About Us | JSV Enterprises',
-    description: 'Learn about JSV Enterprises, a leading steel manufacturer in Jharkhand with 400 TPD capacity.',
-};
 
 export default function About() {
     return (

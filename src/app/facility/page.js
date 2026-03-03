@@ -1,12 +1,9 @@
+'use client';
+
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import styles from './page.module.css';
 import ImageSlider from '../../components/ImageSlider';
-
-export const metadata = {
-    title: 'Manufacturing Facility | JSV Enterprises',
-    description: 'State-of-the-art steel manufacturing facility in Jharkhand with 12-stand automatic rolling mill.',
-};
 
 const facilityImages = [
     '/images/continuous_casting_new.png',
