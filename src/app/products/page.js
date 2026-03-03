@@ -1,13 +1,10 @@
+'use client';
+
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
 import PageHeader from '../../components/PageHeader';
 import styles from './page.module.css';
-
-export const metadata = {
-    title: 'Our Products | JSV Enterprises',
-    description: 'High quality Steel Billets and Structural Steel (Angles, Channels, Square Bars) from JSV Enterprises.',
-};
 
 export default function Products() {
     return (
