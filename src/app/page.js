@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import Hero from '../components/Hero';
 import ContentCarousel from '../components/ContentCarousel';
 import ImageSlider from '../components/ImageSlider';

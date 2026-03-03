@@ -35,6 +35,7 @@ export default function About() {
                             </div>
                         </div>
 
+                        <h2 className={`${styles.subtitle} mobile-center`}>Strategic Location</h2>
                         <p className="mobile-center">
                             Located in Village Konra, Barhi Industrial Area, Hazaribagh, Jharkhand, our plant is strategically positioned for efficient logistics and distribution across the region.
                         </p>
