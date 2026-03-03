@@ -43,14 +43,14 @@ export default function Contact() {
                             <h2>Get in Touch</h2>
                             <div className={styles.contactItem}>
                                 <span className={styles.icon}>📞</span>
-                                <a href="tel:+919431941464">+91 94319 41464</a>, <a href="tel:+918210949940">+91 82109 49940</a>
+                                <a href="tel:+918102695986">+91 81026 95986</a>, <a href="tel:+918273232200">+91 82732 32200</a>
                             </div>
                             <div className={styles.contactItem}>
                                 <span className={styles.icon}>✉️</span>
                                 <a href="mailto:jsvent2018@gmail.com">jsvent2018@gmail.com</a>
                             </div>
 
-                            <a href="https://wa.me/919431941464" target="_blank" rel="noopener noreferrer" className={styles.whatsappBtn}>
+                            <a href="https://wa.me/918102695986" target="_blank" rel="noopener noreferrer" className={styles.whatsappBtn}>
                                 Chat on WhatsApp
                             </a>
                         </div>

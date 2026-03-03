@@ -38,7 +38,7 @@ const Footer = () => {
                     <h4>Contact Us</h4>
                     <p><strong>Registered Office:</strong> Siyaram Nagar, Ranchi Road, Marar, Dist. Ramgarh - 82917 (Jharkhand)</p>
                     <p><strong>Works:</strong> 13/1-A, Village Konra, Barhi Industrial Area, Barhi, Hazaribagh - 825405 (Jharkhand)</p>
-                    <p><strong>Phone:</strong> +91 94319 41464, +91 82109 49940</p>
+                    <p><strong>Phone:</strong> +91 81026 95986, +91 82732 32200</p>
                     <p><strong>Email:</strong> jsvent2018@gmail.com</p>
                 </div>
             </div>
