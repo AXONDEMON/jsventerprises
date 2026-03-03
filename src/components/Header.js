@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -8,6 +8,14 @@ import styles from './Header.module.css';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => setIsMobile(window.innerWidth <= 900);
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -56,7 +64,7 @@ const Header = () => {
     };
 
     const itemVariants = {
-        closed: { opacity: 0, x: 50 },
+        closed: { opacity: isMobile ? 0 : 1, x: isMobile ? 50 : 0 },
         open: { opacity: 1, x: 0 }
     };
 
@@ -66,7 +74,7 @@ const Header = () => {
                 <div className={styles.logoContainer}>
                     <Link href="/" className={styles.mainLogo} onClick={closeMenu}>
                         <Image
-                            src="/images/image copy 3.png"
+                            src="/images/JSV Enterprises-2.png"
                             alt="JSV Enterprises Logo"
                             width={150}
                             height={45}
@@ -90,8 +98,8 @@ const Header = () => {
 
                 <motion.nav
                     className={styles.nav}
-                    initial="closed"
-                    animate={isMenuOpen ? "open" : "closed"}
+                    initial={isMobile ? "closed" : "open"}
+                    animate={isMobile ? (isMenuOpen ? "open" : "closed") : "open"}
                     variants={menuVariants}
                 >
                     <ul className={styles.navList}>
