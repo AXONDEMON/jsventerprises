@@ -38,7 +38,7 @@ export default function Careers() {
 
                         <div className={`${styles.hrContact} mobile-center`}>
                             <h3>HR Contact</h3>
-                            <p><strong>Email:</strong> jsvent2018@gmail.com</p>
+                            <p><strong>Email:</strong> jsvaplsales@gmail.com</p>
                             <p><strong>Phone:</strong> +91 81026 95986</p>
                         </div>
                     </div>

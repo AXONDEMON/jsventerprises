@@ -47,7 +47,7 @@ export default function Contact() {
                             </div>
                             <div className={styles.contactItem}>
                                 <span className={styles.icon}>✉️</span>
-                                <a href="mailto:jsvent2018@gmail.com">jsvent2018@gmail.com</a>
+                                <a href="mailto:jsvaplsales@gmail.com">jsvaplsales@gmail.com</a>
                             </div>
 
                             <a href="https://wa.me/918102695986" target="_blank" rel="noopener noreferrer" className={styles.whatsappBtn}>
