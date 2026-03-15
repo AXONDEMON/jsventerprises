@@ -86,3 +86,14 @@
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+.socialLink {
+    color: var(--accent-color) !important;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.socialLink:hover {
+    opacity: 0.8;
+}
