@@ -20,7 +20,13 @@ export default function Contact() {
                             <h2>Our Locations</h2>
 
                             <div className={styles.addressBlock}>
-                                <h3>🏭 Plant Address</h3>
+                                <h3>Sales & Enquiries</h3>
+                                <p>jsvaplsales@gmail.com</p>
+                                <div style={{ marginTop: '1.5rem' }}>
+                                    <a href="/images/steel_brochure.pdf" download className={styles.brochureLink}>
+                                        &darr; Download Product Brochure (PDF)
+                                    </a>
+                                </div>
                                 <p>
                                     13/1-A, Village Konra<br />
                                     Barhi Industrial Area<br />

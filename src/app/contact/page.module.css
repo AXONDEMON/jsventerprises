@@ -165,3 +165,19 @@
     border-color: var(--secondary-color);
     box-shadow: 0 0 0 2px rgba(65, 90, 119, 0.2);
 }
+
+.brochureLink {
+    display: inline-block;
+    color: var(--accent-color);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.brochureLink:hover {
+    background: var(--accent-color);
+    color: white;
+}

@@ -262,7 +262,12 @@ export default function Home() {
         <div className="container">
           <h2>Ready to Partner With Us?</h2>
           <p>Contact us today for quotes and dealer enquiries.</p>
-          <Link href="/contact" className="btn">Contact Us</Link>
+          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <Link href="/contact" className="btn" style={{ width: isMobile ? '75%' : 'auto' }}>Contact Us</Link>
+            <a href="/images/steel_brochure.pdf" download className="btn" style={{ background: 'transparent', border: '2px solid var(--accent-color)', width: isMobile ? '75%' : 'auto' }}>
+              Download Brochure
+            </a>
+          </div>
         </div>
       </section>
     </main>

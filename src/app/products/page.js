@@ -16,6 +16,11 @@ export default function Products() {
                     We manufacture high-grade steel products adhering to international quality standards.
                     Our integrated plant ensures consistent quality from raw material to finished product.
                 </p>
+                <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+                    <a href="/images/steel_brochure.pdf" download className="btn" style={{ width: 'auto' }}>
+                        Download Technical Brochure (PDF)
+                    </a>
+                </div>
 
                 {/* Steel Billets Section */}
                 <motion.section
