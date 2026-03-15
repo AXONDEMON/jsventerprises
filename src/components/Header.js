@@ -74,7 +74,7 @@ const Header = () => {
                 <div className={styles.logoContainer}>
                     <Link href="/" className={styles.mainLogo} onClick={closeMenu}>
                         <Image
-                            src="/images/JSV Enterprises-2.png"
+                            src="/images/Screenshot 2026-02-16 at 10.48.35 PM.png"
                             alt="JSV Enterprises Logo"
                             width={150}
                             height={45}

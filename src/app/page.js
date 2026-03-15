@@ -118,8 +118,7 @@ export default function Home() {
   const galleryImages = [
     '/images/continuous_casting_new.png',
     '/images/quality_testing_new.png',
-    '/images/melting_refining_new.png',
-    '/images/partners_hero.jpg'
+    '/images/melting_refining_new.png'
   ];
 
   return (
