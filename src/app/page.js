@@ -120,8 +120,7 @@ export default function Home() {
     '/images/quality_testing_new.png',
     '/images/melting_refining_new.png',
     '/images/rolling_mill_premium.png',
-    '/images/rolling_mill_new.png',
-    '/images/ccm_process.jpg'
+    '/images/rolling_mill_new.png'
   ];
 
   return (
