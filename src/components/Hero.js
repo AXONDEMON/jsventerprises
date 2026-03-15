@@ -10,7 +10,7 @@ const Hero = () => {
             <div className={styles.sliderBg}>
                 <div
                     className={styles.bgImage}
-                    style={{ backgroundImage: "url('/images/image copy 3.png')" }}
+                    style={{ backgroundImage: "url('/images/hero_factory_main.png')" }}
                 />
             </div>
 
