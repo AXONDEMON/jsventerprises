@@ -17,19 +17,19 @@
 
 @media (max-width: 899px) {
     .hero {
-        height: auto !important;
-        min-height: unset !important;
+        height: 50vh !important;
+        min-height: 400px !important;
         display: flex !important;
         flex-direction: column !important;
-        justify-content: flex-start !important;
-        padding-bottom: 0 !important;
+        justify-content: flex-end !important;
+        padding-bottom: 2rem !important;
         padding-left: 0 !important;
         padding-right: 0 !important;
-        background-color: #ffffff;
+        background-color: transparent;
     }
 
     .container {
-        padding: 2rem 1.5rem !important;
+        padding: 0 1.5rem !important;
         position: relative !important;
         z-index: 2 !important;
     }
@@ -46,10 +46,9 @@
 
 @media (max-width: 899px) {
     .sliderBg {
-        position: relative !important;
-        height: auto !important;
-        aspect-ratio: 1536 / 630 !important;
-        min-height: unset !important;
+        position: absolute !important;
+        height: 100% !important;
+        aspect-ratio: auto !important;
         width: 100% !important;
     }
 }
@@ -98,12 +97,7 @@
     z-index: 1;
 }
 
-@media (max-width: 899px) {
-    .overlay {
-        display: none !important;
-        /* Remove blur/dimming on mobile as requested */
-    }
-}
+/* Removed mobile overlay hide so it applies everywhere */
 
 .container {
     position: relative;
