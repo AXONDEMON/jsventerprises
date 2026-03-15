@@ -1,4 +1,5 @@
 import PageHeader from '../../components/PageHeader';
+import ContactForm from '../../components/ContactForm';
 import styles from './page.module.css';
 
 export const metadata = {
@@ -70,43 +71,7 @@ export default function Contact() {
                     </div>
 
                     <div className={styles.formColumn}>
-                        <div className={styles.formWrapper}>
-                            <h2>Send us a Message</h2>
-                            <p>For dealer enquiries, quotes, or general questions.</p>
-
-                            <form className={styles.form}>
-                                <div className={styles.formGroup}>
-                                    <label htmlFor="name">Name</label>
-                                    <input type="text" id="name" name="name" placeholder="Your Name" required />
-                                </div>
-
-                                <div className={styles.formGroup}>
-                                    <label htmlFor="email">Email</label>
-                                    <input type="email" id="email" name="email" placeholder="your@email.com" required />
-                                </div>
-
-                                <div className={styles.formGroup}>
-                                    <label htmlFor="phone">Phone</label>
-                                    <input type="tel" id="phone" name="phone" placeholder="Mobile Number" required />
-                                </div>
-
-                                <div className={styles.formGroup}>
-                                    <label htmlFor="subject">Subject</label>
-                                    <select id="subject" name="subject">
-                                        <option>Dealer Enquiry</option>
-                                        <option>Product Quote</option>
-                                        <option>General Support</option>
-                                    </select>
-                                </div>
-
-                                <div className={styles.formGroup}>
-                                    <label htmlFor="message">Message</label>
-                                    <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
-                                </div>
-
-                                <button type="submit" className="btn" style={{ width: '100%' }}>Send Message</button>
-                            </form>
-                        </div>
+                        <ContactForm />
                     </div>
                 </div>
             </div>

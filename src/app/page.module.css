@@ -125,16 +125,16 @@
 
 .logoGrid {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 2rem;
+    justify-content: center;
+    gap: 1rem;
     margin-top: 2rem;
 }
 
 @media (min-width: 768px) {
     .logoGrid {
-        flex-direction: row;
-        justify-content: center;
         gap: 4rem;
     }
 }
@@ -152,9 +152,28 @@
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+@media (max-width: 480px) {
+    .partnerCard {
+        width: 140px;
+        height: 80px;
+        padding: 0.5rem;
+    }
+}
+
 .partnerCard:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.partnerLogo {
+    transition: transform 0.3s;
+    width: 180px;
+}
+
+@media (max-width: 480px) {
+    .partnerLogo {
+        width: 130px;
+    }
 }
 
 .partnerLogo:hover {
@@ -170,6 +189,15 @@
     padding: 0.5rem 1.5rem;
     border-radius: 8px;
     background: white;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .brandName {
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+        padding: 0.5rem 0.5rem;
+    }
 }
 
 @media (min-width: 768px) {

@@ -1,4 +1,5 @@
 import PageHeader from '../../components/PageHeader';
+import CareersForm from '../../components/CareersForm';
 import styles from './page.module.css';
 
 export const metadata = {
@@ -43,48 +44,7 @@ export default function Careers() {
                         </div>
                     </div>
 
-                    <div className={styles.formSection}>
-                        <h2>Apply Now</h2>
-                        <form className={styles.form}>
-                            <div className={styles.formGroup}>
-                                <label htmlFor="name">Full Name</label>
-                                <input type="text" id="name" name="name" required />
-                            </div>
-
-                            <div className={styles.formGroup}>
-                                <label htmlFor="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" required />
-                            </div>
-
-                            <div className={styles.formGroup}>
-                                <label htmlFor="email">Email Address</label>
-                                <input type="email" id="email" name="email" required />
-                            </div>
-
-                            <div className={styles.formGroup}>
-                                <label htmlFor="position">Position Applied For</label>
-                                <select id="position" name="position">
-                                    <option value="plant">Plant Operations</option>
-                                    <option value="office">Office / Admin</option>
-                                    <option value="sales">Sales & Marketing</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-
-                            <div className={styles.formGroup}>
-                                <label htmlFor="resume">Upload Resume</label>
-                                <input type="file" id="resume" name="resume" />
-                                <small>PDF or Word documents only</small>
-                            </div>
-
-                            <div className={styles.formGroup}>
-                                <label htmlFor="message">Message / Cover Letter</label>
-                                <textarea id="message" name="message" rows="4"></textarea>
-                            </div>
-
-                            <button type="submit" className="btn">Submit Application</button>
-                        </form>
-                    </div>
+                    <CareersForm />
                 </div>
             </div>
         </main>
