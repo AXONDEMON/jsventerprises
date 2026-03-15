@@ -95,8 +95,8 @@ export default function Facility() {
                 transition={{ duration: 0.6 }}
             >
                 <div className={styles.statBox}>
-                    <h3>400 TPD</h3>
-                    <p>Daily Production Capacity</p>
+                    <h3>1.5 Lakh MT</h3>
+                    <p>Yearly Production Capacity</p>
                 </div>
                 <div className={styles.statBox}>
                     <h3>24/7</h3>

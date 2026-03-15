@@ -94,7 +94,7 @@ export default function Home() {
       </div>
       <div className={styles.productInfo}>
         <h3>Steel Billets</h3>
-        <p>High-quality billets for rolling mills. 400 TPD production capacity ensuring consistent supply.</p>
+        <p>High-quality billets for rolling mills. 1.5 Lakh Tonnes yearly production capacity ensuring consistent supply.</p>
         <Link href="/products" className={styles.textLink}>Learn More &rarr;</Link>
       </div>
     </motion.div>,
@@ -134,12 +134,12 @@ export default function Home() {
             <p className={styles.lead}>
               JSV Enterprises is a premier manufacturer of high-grade steel products in Barhi, Jharkhand.
               Our state-of-the-art facility combines technological innovation with a commitment to unyielding quality.
-              Proudly delivering <strong>400 TPD</strong> capacity in association with industry giants <strong>APL APOLLO</strong> and <strong>SG Mart Limited</strong>.
+              Proudly delivering <strong>1.5 Lakh Tonnes Yearly</strong> capacity in association with industry giants <strong>APL APOLLO</strong> and <strong>SG Mart Limited</strong>.
             </p>
             <div className={styles.statsGrid}>
               <div className={styles.statCard}>
-                <h3>400</h3>
-                <p>TPD Capacity</p>
+                <h3>1.5L</h3>
+                <p>Tonnes Yearly</p>
               </div>
               <div className={styles.statCard}>
                 <h3>12</h3>

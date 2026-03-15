@@ -27,7 +27,7 @@ export default function Products() {
                 >
                     <div className={styles.productInfo}>
                         <h2>Steel Billets</h2>
-                        <p className={styles.specHighlight}>Capacity: 400 TPD</p>
+                        <p className={styles.specHighlight}>Capacity: 1.5 Lakh Tonnes/Year</p>
                         <p>
                             Our mild steel billets are known for their chemical purity and physical strength.
                             Produced using advanced induction furnaces and continuous casting machines, they serve as the perfect raw material for high-quality rolling.
@@ -62,7 +62,7 @@ export default function Products() {
                 >
                     <div className={styles.productInfo}>
                         <h2>Structural Steel</h2>
-                        <p className={styles.specHighlight}>Capacity: 400 TPD</p>
+                        <p className={styles.specHighlight}>Capacity: 1.5 Lakh Tonnes/Year</p>
                         <p>
                             We produce a wide range of structural steel products including Angles, Channels, and Square Bars.
                             Our fully automatic <strong>12-stand rolling mill</strong> ensures precise dimensions and superior straightness.
