@@ -162,18 +162,16 @@
         position: fixed;
         top: 0;
         right: 0;
-        width: 75%;
+        width: 100%;
         height: 100vh;
         background-color: rgba(13, 27, 42, 0.98);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
         padding: 6rem 2rem;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: flex-start;
         z-index: 1001;
-        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.3);
-        border-left: 1px solid rgba(255, 255, 255, 0.05);
     }
 
     .overlay {
@@ -189,16 +187,18 @@
 
     .navList {
         flex-direction: column;
-        gap: 2.5rem;
-        text-align: left;
+        gap: 2rem;
+        text-align: center;
         width: 100%;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .navItem a {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         font-weight: 600;
-        letter-spacing: 0.5px;
+        letter-spacing: 1px;
+        display: block;
+        padding: 10px;
     }
 
     .logoContainer {
