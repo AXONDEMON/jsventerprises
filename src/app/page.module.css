@@ -143,19 +143,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 280px;
-    height: 120px;
-    padding: 1rem;
+    width: 220px;
+    height: 80px;
+    padding: 0.75rem;
     background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 @media (max-width: 480px) {
     .partnerCard {
-        width: 140px;
-        height: 80px;
+        width: 160px;
+        height: 60px;
         padding: 0.5rem;
     }
 }
@@ -180,23 +181,24 @@
     transform: scale(1.05);
 }
 
-.brandName {
-    font-size: 1.5rem;
+.brandNameText {
+    font-size: 1.1rem;
     font-weight: 800;
     color: #444;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     border: 2px solid #ddd;
-    padding: 0.5rem 1.5rem;
-    border-radius: 8px;
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
     background: white;
     text-align: center;
+    line-height: 1.2;
 }
 
 @media (max-width: 480px) {
-    .brandName {
-        font-size: 0.85rem;
-        letter-spacing: 1px;
-        padding: 0.5rem 0.5rem;
+    .brandNameText {
+        font-size: 0.75rem;
+        letter-spacing: 0.5px;
+        padding: 0.3rem 0.6rem;
     }
 }
 

@@ -196,17 +196,17 @@ export default function Home() {
           </div>
 
           <div className={styles.logoGrid}>
-            <div className={styles.partnerLogo}>
+            <div className={styles.partnerCard}>
               <Image
                 src="/images/aplapollo_logo.png"
                 alt="APL APOLLO"
-                width={180}
-                height={60}
+                width={150}
+                height={50}
                 style={{ objectFit: 'contain' }}
               />
             </div>
-            <div className={styles.brandName}>
-              <span>SG MART LIMITED</span>
+            <div className={styles.partnerCard}>
+              <div className={styles.brandNameText}>SG MART LIMITED</div>
             </div>
           </div>
         </div>
