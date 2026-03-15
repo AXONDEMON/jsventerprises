@@ -28,7 +28,7 @@ export default function Contact() {
                                     </a>
                                 </div>
                                 <p>
-                                    13/1-A, Village Konra<br />
+                                    Plot Number 48, Village Konra<br />
                                     Barhi Industrial Area<br />
                                     Barhi, Hazaribagh<br />
                                     Jharkhand – 825405
