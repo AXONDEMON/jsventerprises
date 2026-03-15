@@ -91,29 +91,35 @@ export default function Products() {
                             </motion.div>
                         </div>
 
-                        <div className={styles.partnershipNote}>
-                            <p><strong>Brand Partnerships:</strong></p>
-                            <div className={styles.logos}>
-                                <span className={styles.badge}>APL APOLLO</span>
-                                <span className={styles.badge}>SG Mart Limited</span>
-                            </div>
-                            <div style={{ marginTop: '1.5rem' }}>
-                                <Image
-                                    src="/images/apl_apollo_amitabh_new.png"
-                                    alt="APL Apollo - Amitabh Bachchan"
-                                    width={500}
-                                    height={250}
-                                    style={{
-                                        objectFit: 'cover',
-                                        borderRadius: '12px',
-                                        width: '100%',
-                                        height: 'auto',
-                                        maxWidth: '500px',
-                                        boxShadow: '0 10px 20px rgba(0,0,0,0.1)'
-                                    }}
-                                />
-                            </div>
+                <section className={styles.partnersSection}>
+                    <h2 className="section-title">Strategic Associations</h2>
+                    <p className={styles.lead}>Strengthening the nation's infrastructure through quality and scale.</p>
+
+                    <div className={styles.brandFeature}>
+                        <Image
+                            src="/images/apl_apollo_amitabh_new.png"
+                            alt="APL Apollo - Amitabh Bachchan"
+                            width={800}
+                            height={400}
+                            style={{ objectFit: 'cover', borderRadius: '16px', margin: '2rem auto', display: 'block', maxWidth: '100%', boxShadow: '0 10px 40px rgba(0,0,0,0.1)' }}
+                        />
+                    </div>
+
+                    <div className={styles.logoGrid}>
+                        <div className={styles.partnerCard}>
+                            <Image
+                                src="/images/aplapollo_logo.png"
+                                alt="APL APOLLO"
+                                width={150}
+                                height={50}
+                                style={{ objectFit: 'contain' }}
+                            />
                         </div>
+                        <div className={styles.partnerCard}>
+                            <div className={styles.brandNameText}>SG MART LIMITED</div>
+                        </div>
+                    </div>
+                </section>
                     </div>
                     <div className={styles.productImagePlaceholder}>
                         <Image
