@@ -97,7 +97,7 @@ export default function Products() {
 
                     <div className={styles.brandFeature}>
                         <Image
-                            src="/images/apl_apollo_amitabh_new.png"
+                            src="/images/apl_apollo_amitabh_new2.png"
                             alt="APL Apollo - Amitabh Bachchan"
                             width={800}
                             height={400}
