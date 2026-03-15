@@ -64,7 +64,7 @@ export default function Products() {
                         <h2>Structural Steel</h2>
                         <p className={styles.specHighlight}>Capacity: 1.5 Lakh Tonnes/Year</p>
                         <p>
-                            We produce a wide range of structural steel products including Angles, Channels, and Square Bars.
+                            We produce a comprehensive range of structural steel products including MS Flats, Angles, Channels, Round Plain Rods, Squares, and Zed Sections.
                             Our fully automatic <strong>12-stand rolling mill</strong> ensures precise dimensions and superior straightness.
                         </p>
 
@@ -74,15 +74,15 @@ export default function Products() {
                                 className={styles.specCard}
                                 whileHover={{ scale: 1.05 }}
                             >
-                                <h4>Angles & Channels</h4>
-                                <p>Precision rolled for heavy construction use.</p>
+                                <h4>Flats, Angles & Channels</h4>
+                                <p>Standard sizes for robust infrastructure and heavy engineering.</p>
                             </motion.div>
                             <motion.div
                                 className={styles.specCard}
                                 whileHover={{ scale: 1.05 }}
                             >
-                                <h4>Square Bars</h4>
-                                <p><strong>Sizes:</strong> 25mm to 75mm</p>
+                                <h4>Rounds, Squares & Zed</h4>
+                                <p><strong>Sizes:</strong> 25mm to 75mm Precision Sections</p>
                             </motion.div>
                         </div>
 

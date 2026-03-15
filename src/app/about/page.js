@@ -24,7 +24,7 @@ export default function About() {
                             With a steadfast commitment to quality and innovation, we have established ourselves as a reliable name in the steel industry.
                         </p>
                         <p className="mobile-center">
-                            Our state-of-the-art facility boasts a <strong>1.5 Lakh Tonnes yearly capacity</strong> for both Steel Billets and Structural Steel products.
+                            Our state-of-the-art facility boasts a <strong>1.5 Lakh Tonnes yearly capacity</strong> for Steel Billets and MS Structural products including Flats, Angles, Channels, Round Plain Rods, Squares, and Zed Sections.
                             Equipped with a fully automatic 12-stand rolling mill, we ensure precision and excellence in every ton of steel we produce.
                         </p>
 

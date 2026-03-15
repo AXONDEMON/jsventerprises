@@ -109,7 +109,7 @@ export default function Home() {
       </div>
       <div className={styles.productInfo}>
         <h3>Structural Steel</h3>
-        <p>Angles, Channels, and Square Bars (25mm-75mm). Manufactured using our 12-stand automatic mill.</p>
+        <p>MS Flats, Angles, Channels, Round Plain Rods, Squares, and Zed Sections (25mm-75mm). Manufactured using our 12-stand automatic mill.</p>
         <Link href="/products" className={styles.textLink}>Learn More &rarr;</Link>
       </div>
     </motion.div>
